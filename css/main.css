@@ -384,12 +384,6 @@ figcaption {
     margin-top: 2rem;
 }
 
-.featureProject {
-    position: relative;
-    text-decoration: none;
-    border-radius: 2rem;
-    background-color: #D5D7D9;
-}
 
 #featureBishop, #featureKing, #featureKnight, #featurePawn{
     position: absolute;
@@ -418,10 +412,26 @@ figcaption {
 }
 
 #dubanFeature{
+    background-color:#EEE9E2;
+}
+
+#albertFeature{
+    background-color:#D5D7D9;
+}
+
+#finalTransmissionFeature{
+    background-color: #070707;
+    color: white;
+}
+
+#albertFeature, #finalTransmissionFeature{
+    min-height: 36rem;
+}
+
+.featureProject{
     display: block;
     position: relative;
     text-decoration: none;
-    background-color:#EEE9E2;
     color:black;
     padding: 4rem 3.5rem;
     border-radius: 2rem;
@@ -429,16 +439,33 @@ figcaption {
     overflow: hidden;
 }
 
-#dubanFeature h3{
+.titleFeature{
     font-size: 2.75rem;
     font-weight: 400;
     margin: 0;
+}
+
+#albertFeatureImg{
+    position: absolute;
+    left: -2rem;
+    bottom: 5rem;
+    scale: 1.25;
+    transform: rotate(-10deg);
+}
+
+#finalFeatureImg{
+    position: absolute;
+    z-index: 0;
+    left:1.25rem;
+    bottom: -3rem;
+    scale: 1.15;
 }
 
 .featureKeywordFlex{
     display: flex;
     gap: 1rem;
     margin: 1.5rem 0;
+    
 }
 
 .featureKeywordFlex p{
@@ -446,11 +473,21 @@ figcaption {
     width: fit-content;
     padding: 0.75rem;
     border-radius: 0.75rem;
+    
+}
+
+#albertKeyword p{
+    background-color:#C7C9CC;
+}
+
+#finalTransKeyword p{
+    background-color: #464545;
 }
 
 .featureText{
     font-size: 1.75rem;
-    width: 30%;
+    max-width: 30rem;
+    z-index: 2;
 }
 
 .featureProject img {
@@ -458,6 +495,13 @@ figcaption {
     object-fit: cover;
     height: auto;
 
+}
+
+.titleFeature,
+.featureKeywordFlex,
+.featureText{
+    position: relative;
+    z-index: 2;
 }
 
 hr {
@@ -530,24 +574,25 @@ footer {
 
 /* about Section */
 
-.aboutContentPush {
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
 
 .aboutText {
 
     margin-top: 3rem;
     margin-bottom: 3rem;
-    display: flex;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .aboutText img {
+    margin-left: 3rem;
+    margin-right: 3rem;
     max-width: 25rem;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
+    border-radius: 1rem;
+
 }
 
 .aboutText div {
@@ -564,8 +609,9 @@ footer {
 }
 
 .aboutFlex {
-    display: flex;
-    gap: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .aboutFlex h2 {
@@ -614,7 +660,7 @@ footer {
 }
 
 .hobbyDiv img {
-
+    border-radius: 1rem;
     width: 100%;
     height: auto;
 }
@@ -1015,21 +1061,17 @@ footer {
         margin-right: 0;
     }
 
-
-    .aboutContentPush {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
     .aboutText {
-
+       
         margin-top: 2rem;
         margin-bottom: 0rem;
         gap: 1rem;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .aboutText img {
+        margin: 0;
         width: 100%;
         max-width: 25rem;
         height: auto;
