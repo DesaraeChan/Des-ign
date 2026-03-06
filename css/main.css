@@ -221,17 +221,49 @@ figcaption {
     background-color: #EAEAEA;
     font-family: "Aeonik";
     display: flex;
-    gap: 3rem;
-    width:fit-content;
-    padding: 1rem 1.75rem;
+    gap: 0;
+    width: fit-content;
+    padding: 0.4rem;
     border-radius: 1rem;
 }
 
 .navLinks a {
+    position: relative;
     text-decoration: none;
     color: black;
-    
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.7rem;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
 }
+
+/* segmented hover */
+.navLinks a:hover,
+.navLinks a:focus {
+    background-color: #e0e0e0; /* slightly darker than navbar */
+    padding-left: 1.6rem;
+}
+
+.navLinks a::before {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background: #E04A4A;
+    border-radius: 50%;
+    transform: translate(-6px, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navLinks a:hover::before,
+.navLinks a:focus::before {
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+
+
 
 .Sandwich {
     margin-top: 0.5rem;
@@ -389,6 +421,18 @@ figcaption {
     position: absolute;
     transform: translateY(-100%);
     scale: 0.49;
+    transition: scale 0.5s ease-in-out;
+}
+
+.featureProject:hover #featureBishop,
+.featureProject:hover #featureKing,
+.featureProject:hover #featureKnight,
+.featureProject:hover #featurePawn,
+.featureProject:focus #featureBishop,
+.featureProject:focus #featureKing,
+.featureProject:focus #featureKnight,
+.featureProject:focus #featurePawn{
+    scale: 0.53;
 }
 
 #featureBishop{
@@ -451,6 +495,11 @@ figcaption {
     bottom: 5rem;
     scale: 1.25;
     transform: rotate(-10deg);
+    transition: scale 0.5s ease-in-out;
+}
+
+.featureProject:hover #albertFeatureImg{
+    scale: 1.35
 }
 
 #finalFeatureImg{
@@ -459,6 +508,11 @@ figcaption {
     left:1.25rem;
     bottom: -3rem;
     scale: 1.15;
+    transition: scale 0.5s ease-in-out;
+}
+
+.featureProject:hover #finalFeatureImg{
+    scale: 1.25
 }
 
 .featureKeywordFlex{
