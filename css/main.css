@@ -269,7 +269,7 @@ figcaption {
 .Sandwich {
     margin-top: 0.5rem;
     border: none;
-    background-color: white;
+    background-color: transparent;
     display: none;
     position: relative;
     height: 1.5rem;
@@ -285,7 +285,7 @@ figcaption {
 .Sandwich span {
     height: 0.25rem;
     width: 100%;
-    background-color: #3A3939;
+    background-color: black;
     border-radius: 1rem;
     position: absolute;
     top: 50%;
@@ -348,7 +348,7 @@ figcaption {
 .CTAContainer {
     margin-top: 2rem;
     background-color: #0E5935;
-    height: 55vh;
+    height: 31rem;
     border-radius: 2rem;
 }
 
@@ -402,9 +402,10 @@ figcaption {
     width: 100%;
     height: 100%;
     padding: 0;
-  margin: 0;
-  overflow: hidden;
+    margin: 0;
+    overflow: hidden;
 }
+
 
 .featureHeader {
     margin-bottom: 4rem;
@@ -444,27 +445,35 @@ figcaption {
 }
 
 #featureBishop {
-    top: 35%;
-    right: 7%;
+    top: 25%;
+    right: 0%;
+    left: 0%;
 }
 
 #featureKnight {
     top: 45%;
-    right: 17%;
+    right: 35%;
 }
 
 #featureKing {
     top: 80%;
-    right: -1%;
+    right: -15%;
 }
 
 #featurePawn {
-    right: -13%;
+    right: -45%;
     top: 50%;
+}
+
+.chessContainer {
+    position: relative;
 }
 
 #dubanFeature {
     background-color: #EEE9E2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 #albertFeature {
@@ -744,6 +753,7 @@ footer {
 
 .caseContainer {
     display: grid;
+    gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     margin: 2rem 8rem;
     padding: 3rem 3rem;
@@ -806,7 +816,8 @@ footer {
 
 .descriptionRoles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
 
@@ -1123,48 +1134,6 @@ footer {
     grid-column: 1/4;
 }
 
-@media(width < 78rem) {
-
-    #featureBishop,
-    #featureKing,
-    #featureKnight,
-    #featurePawn {
-
-        scale: 0.35;
-    }
-
-    .featureProject:hover #featureBishop,
-    .featureProject:hover #featureKing,
-    .featureProject:hover #featureKnight,
-    .featureProject:hover #featurePawn,
-    .featureProject:focus #featureBishop,
-    .featureProject:focus #featureKing,
-    .featureProject:focus #featureKnight,
-    .featureProject:focus #featurePawn {
-        scale: 0.39;
-    }
-
-    #featureBishop {
-        top: 0%;
-        right: -4%;
-    }
-
-    #featureKnight {
-        top: 15%;
-        right: 0%;
-    }
-
-    #featureKing {
-        top: 50%;
-        right: -14%;
-    }
-
-    #featurePawn {
-        top: 20%;
-        right: -20%;
-        
-    }
-}
 
 @media(width < 74rem) {
     .errorGrid {
@@ -1203,6 +1172,11 @@ footer {
 }
 
 @media(width < 66.25rem) {
+    .caseContainer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
     .projectSection {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -1214,7 +1188,7 @@ footer {
         margin-right: 2rem;
     }
 
-    .navbar{
+    .navbar {
         padding-left: 2rem;
         padding-right: 2.5rem;
     }
@@ -1228,45 +1202,7 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
-     #featureBishop,
-    #featureKing,
-    #featureKnight,
-    #featurePawn {
-
-        scale: 0.35;
-    }
-
-    .featureProject:hover #featureBishop,
-    .featureProject:hover #featureKing,
-    .featureProject:hover #featureKnight,
-    .featureProject:hover #featurePawn,
-    .featureProject:focus #featureBishop,
-    .featureProject:focus #featureKing,
-    .featureProject:focus #featureKnight,
-    .featureProject:focus #featurePawn {
-        scale: 0.39;
-    }
-
-    #featureBishop {
-        top: 0%;
-        right: -4%;
-    }
-
-    #featureKnight {
-        top: 15%;
-        right: 0%;
-    }
-
-    #featureKing {
-        top: 50%;
-        right: -14%;
-    }
-
-    #featurePawn {
-     display: none;
-    }
-
-    .featureGrid{
+    .featureGrid {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
     }
@@ -1384,42 +1320,88 @@ footer {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
-    .homeHeader h1{
+    .homeHeader h1 {
         font-size: 3rem;
     }
 
-    .homeHeader h1:nth-child(2){
+    .homeHeader h1:nth-child(2) {
         margin-left: auto;
     }
 
-    .CTAGrid{
+    .CTAGrid {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
     }
 
     .CTAIndust {
-    top: 8%;
-    left: 5%;
-}
+        top: 8%;
+        left: 5%;
+    }
 
-.CTABased {
-    bottom: 8%;
-    left: 5%;
-}
+    .CTABased {
+        bottom: 8%;
+        left: 5%;
+    }
 
     .CTABig {
-    position: absolute;
-    top: 65%;
-    left: 5%;
-    transform: translateY(-100%);
-    height: fit-content;
-}
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        transform: translateY(-100%);
+        height: fit-content;
+    }
 
-.CTABig p {
-    font-size: 2.75rem;
+    .CTABig p {
+        font-size: 2.75rem;
+    }
+
+    #dubanFeature {
+        background-color: #EEE9E2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #featureBishop,
+    #featureKing,
+    #featurePawn,
+    #featureKnight {
+        scale: 0.35;
+    }
 
 
-}
+    .featureProject:hover #featureBishop,
+    .featureProject:hover #featureKing,
+    .featureProject:hover #featureKnight,
+    .featureProject:hover #featurePawn,
+    .featureProject:focus #featureBishop,
+    .featureProject:focus #featureKing,
+    .featureProject:focus #featureKnight,
+    .featureProject:focus #featurePawn {
+        scale: 0.40;
+    }
+
+
+    #featureBishop {
+        top: 5%;
+        right: 0%;
+        left: 0%;
+    }
+
+    #featureKnight {
+        top: 30%;
+        right: 35%;
+    }
+
+    #featureKing {
+        top: 55%;
+        right: -20%;
+    }
+
+    #featurePawn {
+        right: -50%;
+        top: 25%;
+    }
 }
 
 @media(width < 50rem) {
@@ -1483,14 +1465,51 @@ footer {
 }
 
 @media(width<45rem) {
-    .featureContent {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
+ 
+
+    #featureBishop,
+    #featureKing,
+    #featurePawn,
+    #featureKnight {
+        scale: 0.45;
+    }
+
+    .featureProject:hover #featureBishop,
+    .featureProject:hover #featureKing,
+    .featureProject:hover #featureKnight,
+    .featureProject:hover #featurePawn,
+    .featureProject:focus #featureBishop,
+    .featureProject:focus #featureKing,
+    .featureProject:focus #featureKnight,
+    .featureProject:focus #featurePawn {
+        scale: 0.50;
+    }
+
+
+    #featureBishop {
+        top: 40%;
+        right: 0%;
+        left: 0%;
+    }
+
+    #featureKnight {
+        top: 35%;
+        right: 40%;
+    }
+
+    #featureKing {
+        top: 65%;
+        right: -20%;
+    }
+
+    #featurePawn {
+        right: -50%;
+        top: 40%;
     }
 }
 
 @media(width<40rem) {
+
     .titleName {
         border-style: none none none none;
 
@@ -1500,7 +1519,12 @@ footer {
         display: none;
     }
 
-    .featureContent h3 {
+    .titleFeature {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .featureText {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
     }
@@ -1514,15 +1538,60 @@ footer {
     }
 
     .featureContent {
-
         margin-left: 1rem;
         margin-right: 1rem;
         margin-bottom: 1rem;
 
     }
+
+    .featureProject {
+        padding: 2rem 1.5rem;
+    }
+
+    #albertFeatureImg {
+        position: absolute;
+        left: -2rem;
+        bottom: 5rem;
+        scale: 1.5;
+    }
+
+    .featureProject:hover #albertFeatureImg {
+        scale: 1.6;
+    }
+
+    #finalFeatureImg {
+        bottom: 2rem;
+        scale: 1.3;
+    }
+
+    .featureProject:hover #finalFeatureImg {
+        scale: 1.4
+    }
 }
 
-@media(width < 30rem) {
+@media(width < 32rem) {
+
+    .homeHeader h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .subInfoSplit {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .subInfoSplit p:nth-child(1) {
+        display: none;
+    }
+
+    .subInfoSplit p:nth-child(2) {
+        display: none;
+    }
+
+    .subInfoSplit p:nth-child(3) {
+        text-align: right;
+    }
 
     .footerGrid {
         display: flex;
@@ -1597,11 +1666,50 @@ footer {
         margin-right: 1rem;
     }
 
-    .navbar{
+    .navbar {
         padding-left: 1rem;
         padding-right: 1.5rem;
     }
 
+     #featureBishop,
+    #featureKing,
+    #featurePawn,
+    #featureKnight {
+        scale: 0.5;
+    }
+
+    .featureProject:hover #featureBishop,
+    .featureProject:hover #featureKing,
+    .featureProject:hover #featureKnight,
+    .featureProject:hover #featurePawn,
+    .featureProject:focus #featureBishop,
+    .featureProject:focus #featureKing,
+    .featureProject:focus #featureKnight,
+    .featureProject:focus #featurePawn {
+        scale: 0.55;
+    }
+
+
+    #featureBishop {
+        top: 55%;
+        right: 0%;
+        left: 0%;
+    }
+
+    #featureKnight {
+        top: 50%;
+        right: 40%;
+    }
+
+    #featureKing {
+        top: 80%;
+        right: -20%;
+    }
+
+    #featurePawn {
+        right: -50%;
+        top: 40%;
+    }
 }
 
 .animate-swap {
