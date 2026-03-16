@@ -653,13 +653,12 @@ footer {
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 
 }
 
 .aboutText img {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    max-width: 25rem;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -683,7 +682,6 @@ footer {
 .aboutFlex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .aboutFlex h2 {
@@ -1193,28 +1191,14 @@ footer {
         padding-right: 2.5rem;
     }
 
-    .aboutText {
-
-        margin-top: 2rem;
-        margin-bottom: 0rem;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+    
 
     .featureGrid {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
     }
 
-    .aboutText img {
-        margin: 0;
-        width: 100%;
-        max-width: 25rem;
-        height: auto;
-        object-fit: contain;
-        flex-shrink: 1;
-    }
+    
 
     .aboutText div {
         min-width: 0;
@@ -1227,15 +1211,6 @@ footer {
         font-weight: 400;
         font-size: 2.5rem;
 
-    }
-
-    .aboutFlex {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .aboutFlex h2 {
-        max-width: none;
     }
 
     .aboutInterestDiv {
@@ -1283,6 +1258,20 @@ footer {
     .heatP {
         text-align: center;
     }
+}
+
+@media(width < 57rem){
+    .caseContainer{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .caseMeImg {
+
+    height: auto;
+    width: 80%;
+}
 }
 
 @media(width < 55rem) {
@@ -1401,6 +1390,23 @@ footer {
     #featurePawn {
         right: -50%;
         top: 25%;
+    }
+
+    .aboutText {
+
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .aboutText img {
+        margin: 0;
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        object-fit: contain;
+        flex-shrink: 1;
     }
 }
 
@@ -1537,12 +1543,6 @@ footer {
         margin-left: 0;
     }
 
-    .featureContent {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-
-    }
 
     .featureProject {
         padding: 2rem 1.5rem;
@@ -1615,10 +1615,7 @@ footer {
 
     .caseTitle {
 
-        color: white;
-        position: absolute;
-        bottom: 2rem;
-        left: 2rem;
+        font-size: 3rem;
 
     }
 
@@ -1710,6 +1707,20 @@ footer {
         right: -50%;
         top: 40%;
     }
+
+    .caseContainer {
+    margin: 2rem 2rem;
+    padding: 1.5rem 1.5rem;
+    background-color: #F5F0EA;
+    border-radius: 2rem;
+}
+}
+
+@media(width < 25rem){
+    .homeHeader h1 {
+    font-size: 2rem;
+
+}
 }
 
 .animate-swap {
