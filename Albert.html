@@ -181,17 +181,18 @@
                 </div>
             </div>
 
-            <hr>
         </section>
 
 
         <section class="projectSection">
-            <div class = "planningGrid">
+            <div class="planningGrid">
                 <div>
                     <p class="planningSubHeader">Planning the Design</p>
                     <h3 class="planningHeader">Creating a pattern based on my sword dimensions</h3>
                 </div>
-                <p class = "planningDescription">I talked with experienced sewists, to better plan out the affordances and how the material should be laid out. They provided tips about how the types of stitches to use and where, the seams for structure and the ideal amount of seam allowance for each section.</p>
+                <p class="planningDescription">I consulted experienced sewists to refine the garment’s affordances and
+                    material layout, receiving guidance on stitch types, structural seam placement, and appropriate seam
+                    allowances.</p>
             </div>
             <div class="lightGrayBG">
                 <img class="sheathPattern" src="css/img/AlbertImg/DiagramOfSheathPattern.svg"
@@ -201,86 +202,94 @@
 
         </section>
         <section class="projectSection">
-            <p class = "planningSubHeader">Pivoting</p>
-            <h3 class="explanationHeading shrink">With my first attempt at melting  large sheets together, the plastic shrunk and failed miserably :&#40; </h3>
+            <p class="planningSubHeader">Facing Issues</p>
+            <h3 class="explanationHeading shrink">With my first attempt at melting large sheets together, the plastic
+                shrunk and failed miserably :&#40; </h3>
 
-            <div>
-                <div class="errorGrid">
-                    <ol class="errorList">
-                        <li>Some sections of the plastic shrunk over two times its width, so the pieces became unusable.
-                        </li>
-                        <li>Some sections of the plastic shrunk over two times its width, so the pieces became unusable.
-                        </li>
-                        <li>The handles had the same shrinkage and the strap would be too unreliable to use long term.
-                        </li>
-                    </ol>
-                    <img src="/css/img/AlbertImg/Failed parts.avif"
-                        alt="Failed sheath with uneaven edges, misaligned sewing and major size differences"
-                        Height="254" width="806">
+            <div class="failContainer">
+                <div class="failImgContainter">
+                    <img class="failImg" src="/css/img/AlbertImg/FailedPiece.png">
+                    <img class="failIndicator" id="FailTop" src="/css/img/AlbertImg/FailTopLine.svg">
+                    <img class="failIndicator" id="FailMid" src="/css/img/AlbertImg/FailMidLine.svg">
                 </div>
+                <div class=failTextFlex>
+                    <p class="failText">Some sections of the plastic shrunk over two times its width, so the pieces
+                        became unusable.</p>
+                    <p class="failText">Because the edges were so uneven, it was impossible to line up the stitches
+                        nicely</p>
+                </div>
+            </div>
+
+            <div class="failContainer">
+                <div class="failImgContainter">
+                    <img class="failImg" src="css/img/AlbertImg/Strap.png">
+                    <img class="failIndicator" id="FailBot" src="/css/img/AlbertImg/FailBottomLine.svg">
+                </div>
+                <p class="failText failTextFlex failTextCenter">The handles had the same shrinkage and the strap would
+                    be too
+                    unreliable to use long
+                    term</p>
             </div>
         </section>
         <section class="projectSection">
+
             <div class="prefabFlex">
                 <div>
-                    <p>Method Improvements</p>
-                    <h3 class="explanationHeading shrink">Developing accurate measurements and fabrication methods
-                        using the
-                        heat press</h3>
-                    <div class="prefabDiff">
-                        <h4 class="pointHeader">What I did differently:</h4>
-                        <ul class="pointList">
-                            <li>I created larger general sheets that would not shrink a second time.</li>
-                            <li>Retested the temperatures on the new hardware to get exact measurements for reference
-                            </li>
-                            <li>I upcycled a cheap nylon strap because it would be significantly more reliable.</li>
-                        </ul>
-                    </div>
+                    <p class="planningSubHeader">Fabrication Improvements</p>
+                    <h3 class="explanationHeading">I used more forgiving measurements and refined my heating technique,
+                        replacing plastic with other secondhand material where necessary.</h3>
                 </div>
-                <figure class="prefabFig">
-                    <img src="css/img/AlbertImg/PrefabricatedSheets.avif" width="446" height="348">
-                    <figcaption>The sheets of plastic were layered on the heatpress to make a complete sheet that can be
-                        easily
-                        stitched together. A key limitation being the sheets have a maximum size.</p>
-                </figure>
+
+                <ul class="pointList">
+                    <li>I melted larger sheets of plastic together before cutting them to size, which allowed me to
+                        account for any shrinkage.</li>
+                    <li>Retesting the heating temperature helped me find the ideal melting temperature with the heat
+                        press, optimizing for durability and smoothness.
+                    </li>
+                    <li>I decided to repurpose an old nylon bag strap to ensure my sheath’s strap was reliable in
+                        the long term. </li>
+                </ul>
 
             </div>
+            <div class="prefabFigGrid">
+                <figure class="prefabFig">
+                    <img src="css/img/AlbertImg/PrefabricatedSheets.png" width="446" height="348">
+                    <figcaption>Much smoother sheets</figcaption>
+                </figure>
+                <figure class="prefabFig">
+                    <img src="css/img/AlbertImg/StraightLines.png" width="446" height="348">
+                    <figcaption>Cutting straight lines was easy</figcaption>
+                </figure>
+                <figure class="prefabFig">
+                    <img src="css/img/AlbertImg/heatpressNumbers.png" width="446" height="348">
+                    <figcaption>Finding the perfect temperature</figcaption>
+                </figure>
+            </div>
 
-            <hr>
         </section>
         <section class="projectSection">
-            <p>Assembly</p>
-            <h3 class="explanationHeading">By taking the combined sheets, the whole unit was stiched together</h3>
+
             <div class="assemblyFlex">
-                <div class="assemblyCont">
-                    <img src="/css/img/AlbertImg/doubleFoldHem.avif">
-                    <p>The double-fold hem was chosen to enhance the durability of areas on the sheath that experience
-                        frequent contact.</p>
+                <div>
+                    <p class="planningSubHeader">Assembly</p>
+                    <h3 class="explanationHeading">I assembled the whole unit together with a sowing machine and black thread to retain a handmade feel. 
+                    </h3>
                 </div>
-                <div class="assemblyCont">
-                    <img src="css/img/AlbertImg/curvedSurface.avif" height="300" width="450">
-                    <p>This made sure there was a curved and durable surface where the sword contacts the body.</p>
-                </div>
-                <div class="assemblyCont">
-                    <img src="css/img/AlbertImg/weldedStitch.avif" height="250" width="450">
-                    <p>Where the body needed to be extended, the pieces were welded and overlap stitched together</p>
-                </div>
+                <img src="css/img/AlbertImg/curvedSurface.png" height="272" width="660">
+
             </div>
         </section>
 
         <section class="darkGrayBG projectSection">
             <h3 class="explanationHeading finalHeaderPadding whiteText">Final Product</h3>
             <div class="finalAlbertGrid">
-                <img src="css/img/AlbertImg/AFinal1.avif" height="483" width="363">
-                <img src="css/img/AlbertImg/AFinal2.avif" height="483" width="363">
-                <img src="css/img/AlbertImg/AFinal3.avif" height="483" width="363">
-                <img class="longFinalAlbert" src="css/img/AlbertImg/AFinal4.avif" height="422" width="1163">
-                <img src="css/img/AlbertImg/AFinal5.avif" height="483" width="363">
-                <img src="css/img/AlbertImg/AFinal6.avif" height="483" width="363">
-                <img src="css/img/AlbertImg/AFinal7.avif" height="483" width="363">
+                <img src="css/img/AlbertImg/AFinal1.png" height="483" width="363">
+                <img src="css/img/AlbertImg/AFinal2.png" height="483" width="363">
+                <img src="css/img/AlbertImg/AFinal3.png" height="483" width="363">
             </div>
             <h3 class="explanationHeading finalHeaderPadding whiteText">Final Reflection</h3>
-            <p class = "whiteText">Overall, the product was successful. Plastic bags can be reused and upcycled in this manner, and the
+            <p class="whiteText">Overall, the product was successful. Plastic bags can be reused and upcycled in this
+                manner, and the
                 process produces very little waste. In the future, I would have added more considerations for the sword
                 itself and how it interacts with the plastics. Because the plastics are non-porous, moisture can build
                 up inside the sheath, so I added silica packs to manage humidity. Additionally, more long-term testing
