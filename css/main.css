@@ -685,7 +685,7 @@ footer {
 }
 
 .aboutFlex h2 {
-    max-width: 25rem;
+    padding-right: 3rem;
     flex-shrink: 1;
 }
 
@@ -1168,6 +1168,22 @@ footer {
     padding-top:1rem;
 }
 
+/* Duban */
+
+.dubanExplanationTripleGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.chessPieceSketch {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    border-radius: 3rem;
+}
+
 @media(width < 74rem) {
     .errorGrid {
         grid-template-columns: none;
@@ -1212,7 +1228,7 @@ footer {
         padding-bottom: 2rem;
     }
 
-    .homeSection {
+    .homeSection, .aboutSection {
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -1503,6 +1519,11 @@ footer {
         object-fit: contain;
         flex-shrink: 1;
     }
+
+    .aboutFlex{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media(width < 50rem) {
@@ -1777,7 +1798,7 @@ footer {
         height: 1.75rem;
     }
 
-    .homeSection {
+    .homeSection, .aboutSection {
         margin-left: 1rem;
         margin-right: 1rem;
     }

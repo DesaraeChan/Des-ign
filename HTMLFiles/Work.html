@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desmond Chen</title>
+    <link rel="icon" type="image/x-icon" href="/css/img/icons/MainIcon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="/css/main.css" rel="stylesheet">
+
+    <script src="/JavaScript/dropdown.js" defer></script>
+    <script src="/JavaScript/home.js" defer></script>
+    <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="homeIcon">
+                <img src="/css/img/icons/homeButton.gif" width="50" height="50">
+            </a>
+
+            <div class="navLinks">
+                <a href="/HTMLFiles/Work.html">work</a>
+                <a href="/HTMLFiles/About.html">about</a>
+                <a href="https://drive.google.com/file/d/1CEsf2h-suVlxp9FKgOKLs79PEW1iw4vz/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
+            </div>
+
+            <button class="Sandwich" aria-label="Sandwich Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobileLinks">
+
+            <a class="innerLinks" id="NavLinkOne" href="/HTMLFiles/Work.html">
+                <p>01</p>
+                <p>Works</p>
+            </a>
+            <a class="innerLinks" href="/HTMLFiles/About.html">
+                <p>02</p>
+                <p>About</p>
+            </a>
+            <a class="innerLinks" href="#">
+                <p>03</p>
+                <p>Resume</p>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="homeSection">
+            <h2 class="featureHeader">Featured Projects</h2>
+            <a href="/HTMLFiles/Duban.html" class="featureProject" id="dubanFeature">
+                <div>
+                    <h3 class="titleFeature">Duban Chess Set</h3>
+                    <div class="featureKeywordFlex">
+                        <p>Student Project</p>
+                        <p>Accessible Product Design</p>
+                    </div>
+                    <p class="featureText">Using form to make chess more enjoyable for people with arthritis.</p>
+                </div>
+                <div class="chessContainer">
+                    <img src="/css/DubanPieces/DissectionBishop.png" id="featureBishop" alt="Duban Bishop">
+                    <img src="/css/DubanPieces/DissectionKing.png" id="featureKing" alt="Duban King">
+                    <img src="/css/DubanPieces/DissectionKnight.png" id="featureKnight" alt="Duban Knight">
+                    <img src="/css/DubanPieces/DissectionPawn.png" id="featurePawn" alt="Duban Pawn">
+                </div>
+                <!-- need to add pop in widths -->
+            </a>
+            <div class="featureGrid">
+                <a href="/HTMLFiles/Albert.html" class="featureProject" id="albertFeature">
+                    <div class="featureContent">
+                        <h3 class="titleFeature">Albert Sheath</h3>
+                        <div class="featureKeywordFlex" id="albertKeyword">
+                            <p>Personal Project</p>
+                            <p>Materials Research</p>
+                        </div>
+                        <p class="featureText">Fencing accessory made from recycled materials</p>
+                        <img src="/css/img/AlbertFeature.png" alt="Albert with sword" id="albertFeatureImg">
+                    </div>
+                </a>
+                <a href="/HTMLFiles/FinalTransmission.html" class="featureProject" id="finalTransmissionFeature">
+                    <div class="featureContent">
+                        <h3 class="titleFeature">Final Transmission</h3>
+
+                        <div class="featureKeywordFlex" id="finalTransKeyword">
+                            <p>Student Project</p>
+                            <p>Interconnected Devices</p>
+                        </div>
+                        <p class="featureText">An escape room experience built with a network of wireless devices</p>
+                        <img src="/css/img/FinalFeature.png" alt="Final Transmission Escape Room" id="finalFeatureImg">
+
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
