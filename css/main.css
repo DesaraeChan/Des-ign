@@ -399,7 +399,7 @@ figcaption {
 #gravity-container {
     display: block;
     position: relative;
-    width: 100%;
+    width: 98%;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -886,6 +886,10 @@ footer {
     max-width: 50%;
 }
 
+.overHeadPadding{
+    Padding-top: 3rem;
+}
+
 .borderCurve {
     border: #070707 0.1rem solid;
     border-radius: 2rem;
@@ -1147,11 +1151,18 @@ footer {
     gap: 2rem;
 }
 
-.finalAlbertGrid img {
+.finalAlbertGrid img, .finalDubanGrid img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+.finalDubanGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
 .whiteText {
@@ -1239,17 +1250,38 @@ footer {
 }
 
 
-.dubanRefinementImageFlex figure img{
+.dubanRefinementImageFlex figure img, .dubanRenderGrid figure img {
    width: 100%;
    height: auto;
+   border-radius: 2rem;
 }
 
-.dubanRefinementImageFlex figure figcaption{
-    padding-top: 1rem;
+
+
+.dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
+    padding-top: 0.5rem;
    text-align: center;
    margin-left: auto;
     margin-right: auto;
    width: 60%;
+}
+
+.dubanRenderImage{
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+   height: auto;
+
+}
+
+.dubanRenderGrid{
+    margin-top: 2rem;
+    display: Grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 
@@ -1596,7 +1628,7 @@ footer {
         flex-direction: column;
     }
 
-    .dubanExplanationTripleGrid {
+    .dubanExplanationTripleGrid, .dubanRenderGrid {
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -1610,12 +1642,12 @@ footer {
 
     }
 
-    .dubanRefinementImageFlex{
+    .dubanRefinementImageFlex, .dubanRenderImage{
         display: block;
     padding: 2rem;
 
 }
-.dubanRefinementImageFlex figure figcaption{
+.dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
     padding-top: 1rem;
    text-align: center;
    margin-left: auto;

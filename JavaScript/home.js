@@ -2,10 +2,11 @@ let wordIndex = 0;
 let words = [];
 
 const svgList = [
-  { texture: "/css/ProductVectors/Akua.svg", w: 280, h: 220, scale: 1.25 },
-  { texture: "/css/ProductVectors/Albert.svg", w: 210, h: 110, scale: 1.5 },
-  { texture: "/css/ProductVectors/Duban.svg", w: 300, h: 150, scale: 1.5 },
-  { texture: "/css/ProductVectors/StonePond.svg", w: 280, h: 220, scale: 1.5 }
+  { texture: "/css/ProductVectors/Akua.svg", w: 270, h: 100, scale: 1.25 },
+  { texture: "/css/ProductVectors/Albert.svg", w: 340, h: 220, scale: 1.5 },
+  { texture: "/css/ProductVectors/Duban.svg", w: 270, h: 170, scale: 1.5 },
+  { texture: "/css/ProductVectors/StonePond.svg", w: 190, h: 90, scale: 1.5 },
+  { texture: "/css/ProductVectors/FinalTransmission.svg", w:210, h:160, scale: 1.5}
 ];
 let svgIndex = 0;
 const referenceWidth = 600;
@@ -154,7 +155,7 @@ function dropSVG(width) {
   Matter.World.add(engine.world, body);
 }
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
   setTimeout(() => dropSVG(container.clientWidth), i * 600);
 }
 
