@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Desmond Chen
+  link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='css/main.css' rel='stylesheet')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js')
+  script(src='/JavaScript/home.js' defer='')
+
+include inc/_nav
+main
+  section#antiPadding.homeSection
+    .homeHeader
+      h1 DESMOND
+      h1 CHEN
+    .subInfoGrid
+      p.subInfoText Industrial/Product Designer
+      .subInfoSplit
+        p.subInfoText Student
+        p.subInfoText Tinkerer
+        p.subInfoText
+          | PST 
+          span.time 12:00
+    .CTAContainer
+      .CTAGrid
+        #gravity-container
+        .CTAInfo
+          p.CTAIndust Industrial Designer
+          .CTABig
+            p Builds that
+            p
+              | are 
+              span#swapText resourceful
+          p.CTABased Based in Vancouver
+  section.homeSection
+    h2.featureHeader Featured Projects
+    a#dubanFeature.featureProject(href='/HTMLFiles/Duban.html')
+      div
+        h3.titleFeature Duban Chess Set
+        .featureKeywordFlex
+          p Student Project
+          p Accessible Product Design
+        p.featureText Using form to make chess more enjoyable for people with arthritis.
+      .chessContainer
+        img#featureBishop(src='/css/img/DubanImg/DubanPieces/DissectionBishop.avif' alt='Duban Bishop')
+        img#featureKing(src='/css/img/DubanImg/DubanPieces/DissectionKing.avif' alt='Duban King')
+        img#featureKnight(src='/css/img/DubanImg/DubanPieces/DissectionKnight.avif' alt='Duban Knight')
+        img#featurePawn(src='/css/img/DubanImg/DubanPieces/DissectionPawn.avif' alt='Duban Pawn')
+    .featureGrid
+      a#albertFeature.featureProject(href='/HTMLFiles/Albert.html')
+        .featureContent
+          h3.titleFeature Albert Sheath
+          #albertKeyword.featureKeywordFlex
+            p Personal Project
+            p Materials Research
+          p.featureText Fencing accessory made from recycled materials
+          img#albertFeatureImg(src='css/img/AlbertFeature.avif' alt='Albert with sword')
+      a#finalTransmissionFeature.featureProject(href='/HTMLFiles/FinalTransmission.html')
+        .featureContent
+          h3.titleFeature Final Transmission
+          #finalTransKeyword.featureKeywordFlex
+            p Student Project
+            p Interconnected Devices
+          p.featureText An escape room experience built with a network of wireless devices
+          img#finalFeatureImg(src='css/img/FinalFeature.avif' alt='Final Transmission Escape Room')
+include inc/_footer

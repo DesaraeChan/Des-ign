@@ -1,0 +1,211 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Albert Case study - Desmond Chen
+  link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='/JavaScript/fadeIn.js' defer='')
+  link(href='/css/main.css' rel='stylesheet')
+  // <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg">
+include inc/_navCase
+main
+  section
+    img.caseImg(alt='Fencing sword with Albert Shealth' src='/css/img/AlbertHeader.avif' height='600' weight='1000')
+    .caseContainer
+      div
+        h1.caseTitle Albert 
+        h1.caseTitle Sheath
+        p Personal Project
+      div
+        p.descriptionSubhead Summary
+        h2.descriptionHeader
+          | With the plastic waste crisis in mind, I developed new methods for
+          | processing plastic shopping bags into durable materials for accessories, such as a fencing
+          | sheath.
+        hr
+        .descriptionRoles
+          div
+            p.roleTitles Skills
+            p Soft Product Development, Material Research
+          div
+            p.roleTitles Tools
+            p Sewing Machine
+            p Heat Press
+          div
+            p.roleTitles Duration
+            p 7 weeks, Spring 2025
+          div
+            p.roleTitles Advisor
+            p Holly Krueger, Instructor at Tu/e
+  section
+    .caseContainer.grayBG
+      img.caseMeImg(src='/css/img/AlbertImg/DrawingMe.svg' alt='Drawing of me with a sword out in the open')
+      div
+        h2.whyStatementHead Why I made this
+        p
+          | While on exchange in the Netherlands, I picked up a new fencing sword and a habit of collecting
+          | Albert Heijn plastic bags. Getting the blade safely across the city for fencing practice (by
+          | bike) was a challenge, and a growing stash of single-use plastic was another. This project
+          | solved both at once.
+  section.projectSection
+    .albertResearch
+      p Research
+      h3.explanationHeading
+        | Exploring material properties with small samples - what can I do with a
+        | heat press and sowing machine?
+      p I used the most common type of Albert Heijn plastic bag.
+    .explanationFlex
+      figure
+        img.albertTassen(alt='Albert Heijn shopping bags' src='/css/img/AlbertImg/plastic-tassen.avif' height='300' width='250')
+      figure
+        img.albertTassen(src='/css/img/AlbertImg/BagDiagram.avif' alt='Albert Heijn Bag Diagram')
+  section.projectSection
+    h3.explanationHeading.textCenter.lessBottomMargin
+      | Developing a durable material was a trial and
+      | error process
+    p.subExplanationHeading.textCenter
+      | Changing variables: temperature of heat press and number of
+      | sheets.
+    .heatSpacer
+      .heatingGrid
+        .heatPadding
+          p.heatHeading Under-Heated
+          img.heatTesters(src='/css/img/AlbertImg/Undercooked.avif' alt='failed underheated plastic test' height='400' width='200')
+          p.heatP The plastic delaminates with too little heat
+        .heatPadding
+          p.heatHeading Over-Heated
+          img.heatTesters.heatLong(src='/css/img/AlbertImg/Overcooked.avif' alt='failed overheated plastic test' height='400' width='200')
+          p.heatP Overheating causes holes and shrinkage
+        .heatPadding.borderCurve
+          p.heatHeading Just Right
+          img.heatTesters(src='/css/img/AlbertImg/Double Piece.avif' alt='successfully combined plastic pieces from correct temperature' height='400' width='500')
+          p.heatP
+            | With the correct application of heat, the sheets melt together and becomes
+            | stronger as a
+            | result.
+    h3.explanationHeading.textCenter.lessBottomMargin
+      | Exploring trade-offs with two different joining
+      | methods
+    .heatSpacer
+      .connectionGrid
+        .heatPadding.alignItemTop
+          p.heatHeading Heat Welded
+          img.connectionImage(src='/css/img/AlbertImg/Heat Welded.avif' alt='Rip tested heat weleded plastic sheets' height='200' width='600')
+          p.textCenter
+            | When heat welded, the joint resists shear forces well but is prone to
+            | cracking under severe bending forces.
+        .borderCurve.heatPadding
+          p.heatHeading Machine Sewn
+          img.connectionImage(src='/css/img/AlbertImg/Stitched.avif' alt='Sewing togther multilayer Plastic Sheets' height='200' width='600')
+          p.textCenter
+            | Standard electronic sewing machines can handle up to 10 layers of plastic
+            | bags without needle damage, while leather machines can sew through 24 layers safely. The
+            | connections are reliable if spaced appropriately. However, machine sowing makes it obvious
+            | that two separate pieces were used - an effect I decided to lean into, using black thread.
+  section.projectSection
+    .planningGrid
+      div
+        p.planningSubHeader Planning the Design
+        h3.planningHeader Creating a pattern based on my sword dimensions
+      p.planningDescription
+        | I consulted experienced sewists to refine the garment&rsquo;s affordances and
+        | material layout, receiving guidance on stitch types, structural seam placement, and appropriate seam
+        | allowances.
+    .lightGrayBG
+      img.sheathPattern(src='/css/img/AlbertImg/DiagramOfSheathPattern.svg' alt='Pattern of the components (body, handle, and body strap) of the fencing sheath with dimensions' height='372' width='1043')
+  section.projectSection
+    p.planningSubHeader Facing Issues
+    h3.explanationHeading.shrink
+      | With my first attempt at melting large sheets together, the plastic
+      | shrunk and failed miserably :(
+    .failContainer
+      .failImgContainter
+        img.failImg(src='/css/img/AlbertImg/FailedPiece.avif' alt='2 Pieces of sewn together plastic that had weird shapes and deformations')
+        img#FailTop.failIndicator(src='/css/img/AlbertImg/FailTopLine.svg' alt='arrow that point to the some sections text')
+        img#FailMid.failIndicator(src='/css/img/AlbertImg/FailMidLine.svg' alt='arrow that point to the because the edges text')
+      .failTextFlex
+        p.failText
+          | Some sections of the plastic shrunk over two times its width, so the pieces
+          | became unusable.
+        p.failText
+          | Because the edges were so uneven, it was impossible to line up the stitches
+          | nicely
+    .failContainer
+      .failImgContainter
+        img.failImg(src='/css/img/AlbertImg/Strap.avif' alt='heavily warped pag handles')
+        img#FailBot.failIndicator(src='/css/img/AlbertImg/FailBottomLine.svg' alt='arrows that point to the  the handles had text')
+      p.failText.failTextFlex.failTextCenter
+        | The handles had the same shrinkage and the strap would
+        | be too
+        | unreliable to use long
+        | term
+  section.projectSection
+    .prefabFlex
+      div
+        p.planningSubHeader Fabrication Improvements
+        h3.explanationHeading
+          | I used more forgiving measurements and refined my heating technique,
+          | replacing plastic with other secondhand material where necessary.
+      ul.AlbertpointList
+        li
+          | I melted larger sheets of plastic together before cutting them to size, which allowed me to
+          | account for any shrinkage.
+        li
+          | Retesting the heating temperature helped me find the ideal melting temperature with the heat
+          | press, optimizing for durability and smoothness.
+        li
+          | I decided to repurpose an old nylon bag strap to ensure my sheath&rsquo;s strap was reliable in
+          | the long term.
+    .prefabFigGrid
+      figure.prefabFig
+        img(src='/css/img/AlbertImg/PrefabricatedSheets.avif' width='446' height='348' alt='premade sheets of plastic')
+        figcaption Much smoother sheets
+      figure.prefabFig
+        img(src='/css/img/AlbertImg/StraightLines.avif' width='446' height='348' a;t='Straight clean strips of plastic')
+        figcaption Cutting straight lines was easy
+      figure.prefabFig
+        img(src='/css/img/AlbertImg/heatpressNumbers.avif' width='446' height='348' alt='photo of temperature of the heatpress')
+        figcaption Finding the perfect temperature
+  section.projectSection
+    .assemblyFlex
+      div
+        p.planningSubHeader Assembly
+        h3.explanationHeading
+          | I assembled the whole unit together with a sowing machine and black
+          | thread to retain a handmade feel.
+      img(src='/css/img/AlbertImg/curvedSurface.avif' height='272' width='660' alt='Types of stitching used in the sheath')
+  section.darkGrayBG.projectSection
+    .finalHeaderFlex
+      div
+        p.finalSubHeading.whiteText Conclusion
+        h3.explanationHeading.whiteText
+          span.finalProductHeaderPart
+            | The
+            | final product
+          |  - a durable fencing sword sheath made entirely from recycled materials.
+      img(src='/css/img/AlbertImg/cutOutSwordImg.avif' alt='floating image of the sheath with sword inside')
+    .finalAlbertGrid
+      img(src='/css/img/AlbertImg/AFinal1.avif' height='483' width='363' alt='sword being taken out of sheath')
+      img(src='/css/img/AlbertImg/AFinal2.avif' height='483' width='363' alt='sheath being worn on the back')
+      img(src='/css/img/AlbertImg/AFinal3.avif' height='483' width='363' alt='sheath connection to the strap')
+    p.finalSubHeading.whiteText Reflection
+    .reflectionGrid
+      h3.explanationHeading.whiteText
+        | I&rsquo;ve used the Albert Sheath every week for the past year, and
+        | it holds up well - a definite success in my books!
+      div
+        p.whiteText.lessBottomMargin
+          | Working with plastic bags pushed me to see materials differently: waste as a
+          | design
+          | resource, not an afterthought.
+        p.whiteText
+          | As my first soft goods project, almost everything was learned on the fly (and the stitching
+          | shows
+          | it, don&rsquo;t look too closely at it!) But that challenge is exactly what&apos;s driven me to keep
+          | developing
+          | these skills, learning new tools and techniques, and explore where soft fabrication can take me
+          | next.
+include inc/_footer

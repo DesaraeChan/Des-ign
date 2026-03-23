@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Desmond Chen
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='/JavaScript/fadeIn.js' defer='')
+  link(href='/css/main.css' rel='stylesheet')
+  // <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg">
+include inc/_nav
+main
+  section.aboutSection
+    .aboutText.aboutContentPush
+      img(alt='Image of Desmond Chen' src='/css/img/AboutImage.avif' height='600' width='769')
+      div
+        h1.aboutHeader Hi, I&rsquo;m Desmond, an aspiring product designer.
+        p.aboutContent
+          | I&rsquo;m an industrial and product designer based in Vancouver, BC Canada,
+          | currently studying at SFU&rsquo;s School of Interactive Arts &amp; Technology. Shaped by a curiosity to
+          | dissect products and systems, I am always eager to discover how I can guide others towards more
+          | practical solutions and thinking. At the same time, I love imbuing moments of playfulness and
+          | delight in any product. I believe good design should always be at least a little bit fun for the
+          | creator to make, and for others to use.
+  section.aboutSection
+    .aboutFlex
+      h2 I specialize in, but not limited to:
+      .aboutInterestDiv
+        a.aboutSkills
+          p Industrial Design
+          img(src='/css/img/icons/Link Arrows.svg' height='20' weight='20')
+        a.aboutSkills
+          p Spatial Design
+          img(src='/css/img/icons/Link Arrows.svg' height='20' weight='20')
+        a.aboutSkills
+          p Prototyping
+          img(src='/css/img/icons/Link Arrows.svg' height='20' weight='20')
+        a.aboutSkills
+          p Research
+          img(src='/css/img/icons/Link Arrows.svg' height='20' weight='20')
+  section.aboutSection
+    .aboutFlex
+      h2 Some things I like to do after work are:
+      .aboutInterestDiv
+        .hobbyDiv
+          img(src='/css/img/Fencing.avif' height='1059' width='1770')
+          p Fencing
+        .hobbyDiv
+          img(src='/css/img/Gundam.avif' height='1059' width='1770')
+          p Gundam
+        .hobbyDiv
+          img(src='/css/img/Drawing.avif' height='1059' width='1770')
+          p Drawing the places I go
+include inc/_footer

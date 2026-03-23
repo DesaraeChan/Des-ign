@@ -1,160 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Desmond Chen</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="/css/main.css" rel="stylesheet">
-    <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desmond Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <script src="/JavaScript/dropdown.js" defer=""></script>
+  <script src="/JavaScript/fadeIn.js" defer=""></script>
+  <link href="/css/main.css" rel="stylesheet">
+  <!-- <link rel="icon" type="image/x-icon" href="css/imgs/favicon.svg">-->
 </head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="/index.html" class="homeIcon">
-                <img src="/css/img/icons/homeButton.gif" width="50" height="50">
-            </a>
-
-            <div class="navLinks">
-                <a href="/HTMLFiles/Work.html">work</a>
-                <a href="/HTMLFiles/About.html">about</a>
-                <a href="https://drive.google.com/file/d/1CEsf2h-suVlxp9FKgOKLs79PEW1iw4vz/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
-            </div>
-
-            <button class="Sandwich" aria-label="Sandwich Menu">
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-        <div class="mobileLinks">
-            <div class="mobileLinksInner">
-                <a href="/HTMLFiles/Work.html" class="innerLinks" id="NavLinkOne">
-                    <p>01</p>
-                    <p>Works</p>
-                </a>
-                <a class="innerLinks" href="/HTMLFiles/About.html">
-                    <p>02</p>
-                    <p>About</p>
-                </a>
-                <a class="innerLinks" href="#">
-                    <p>03</p>
-                    <p>Resume</p>
-                </a>
-            </div>
+<header>
+  <nav class="navbar"><a class="homeIcon" href="/index.html"><img src="/css/img/icons/homeButton.gif" width="50" height="50"></a>
+    <div class="navLinks"><a href="/HTMLFiles/Work.html">work</a><a href="/HTMLFiles/About.html">about</a><a href="https://drive.google.com/file/d/1UwBm8nddmK0KD4YlyWKBe_Ptv18u-9CQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a></div>
+    <button class="Sandwich" aria-label="Sandwich Menu"><span></span><span></span></button>
+    <div class="mobileLinks">
+      <div class="mobileLinksInner"></div><a class="innerLinks" id="NavLinkOne" href="/HTMLFiles/Work.html">
+        <p>01</p>
+        <p>Works</p></a><a class="innerLinks" href="/HTMLFiles/About.html">
+        <p>02</p>
+        <p>About</p></a><a class="innerLinks" href="https://drive.google.com/file/d/1UwBm8nddmK0KD4YlyWKBe_Ptv18u-9CQ/view?usp=sharing">
+        <p>03</p>
+        <p>Resume</p></a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="aboutSection">
+    <div class="aboutText aboutContentPush"><img alt="Image of Desmond Chen" src="/css/img/AboutImage.avif" height="600" width="769">
+      <div>
+        <h1 class="aboutHeader">Hi, I&rsquo;m Desmond, an aspiring product designer.</h1>
+        <p class="aboutContent">
+          I&rsquo;m an industrial and product designer based in Vancouver, BC Canada,
+          currently studying at SFU&rsquo;s School of Interactive Arts &amp; Technology. Shaped by a curiosity to
+          dissect products and systems, I am always eager to discover how I can guide others towards more
+          practical solutions and thinking. At the same time, I love imbuing moments of playfulness and
+          delight in any product. I believe good design should always be at least a little bit fun for the
+          creator to make, and for others to use.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="aboutSection">
+    <div class="aboutFlex">
+      <h2>I specialize in, but not limited to:</h2>
+      <div class="aboutInterestDiv"><a class="aboutSkills">
+          <p>Industrial Design</p><img src="/css/img/icons/Link Arrows.svg" height="20" weight="20"></a><a class="aboutSkills">
+          <p>Spatial Design</p><img src="/css/img/icons/Link Arrows.svg" height="20" weight="20"></a><a class="aboutSkills">
+          <p>Prototyping</p><img src="/css/img/icons/Link Arrows.svg" height="20" weight="20"></a><a class="aboutSkills">
+          <p>Research</p><img src="/css/img/icons/Link Arrows.svg" height="20" weight="20"></a></div>
+    </div>
+  </section>
+  <section class="aboutSection">
+    <div class="aboutFlex">
+      <h2>Some things I like to do after work are:</h2>
+      <div class="aboutInterestDiv">
+        <div class="hobbyDiv"><img src="/css/img/Fencing.avif" height="1059" width="1770">
+          <p>Fencing</p>
         </div>
-
-    </header>
-
-    <main>
-        <section class="aboutSection">
-            <div class="aboutText aboutContentPush">
-                <img alt="Image of Desmond Chen" src="/css/img/AboutImage.avif" height="600" width="769">
-                <div>
-                    <h1 class="aboutHeader">Hi, I’m Desmond, an aspiring product designer.</h1>
-                    <p class="aboutContent">I’m an industrial and product designer based in Vancouver, BC Canada,
-                        currently studying at SFU’s School of Interactive Arts & Technology. Shaped by a curiosity to
-                        dissect products and systems, I am always eager to discover how I can guide others towards more
-                        practical solutions and thinking. At the same time, I love imbuing moments of playfulness and
-                        delight in any product. I believe good design should always be at least a little bit fun for the
-                        creator to make, and for others to use.
-
-
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="aboutSection">
-            <div class="aboutFlex">
-                <h2>I specialize in, but not limited to:</h2>
-                <div class="aboutInterestDiv">
-                    <a class="aboutSkills">
-                        <p>Industrial Design</p>
-                        <img src="/css/img/icons/Link Arrows.svg" height="20" weight="20">
-                    </a>
-                    <a class="aboutSkills">
-                        <p>Spatial Design</p>
-                        <img src="/css/img/icons/Link Arrows.svg" height="20" weight="20">
-                    </a>
-                    <a class="aboutSkills">
-                        <p>Prototyping</p>
-                        <img src="/css/img/icons/Link Arrows.svg" height="20" weight="20">
-                    </a>
-                    <a class="aboutSkills">
-                        <p>Research</p>
-                        <img src="/css/img/icons/Link Arrows.svg" height="20" weight="20">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="aboutSection">
-            <div class="aboutFlex">
-                <h2>Some things I like to do after work are:</h2>
-                <div class="aboutInterestDiv">
-                    <div class="hobbyDiv">
-                        <img src="/css/img/Fencing.avif" height="1059" width="1770">
-                        <p>Fencing</p>
-                    </div>
-                    <div class="hobbyDiv">
-                        <img src="/css/img/Gundam.avif" height="1059" width="1770">
-                        <p>Gundam</p>
-                    </div>
-                    <div class="hobbyDiv">
-                        <img src="/css/img/Drawing.avif" height="1059" width="1770">
-                        <p>Drawing the places I go</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    
-
-    </main>
-
-    <footer>
-        <div class="footerContact">
-            <p>(CONTACT)</p>
-            <p class="footerContactHeader">INTERESTED IN WORKING TOGETHER?</p>
-            <a href="" class="footerContactLink">SEND ME A MESSAGE <img class="footerArrow"
-                    alt="link to a sending a message" src="/css/img/icons/LargeArrow.svg" height="40" width="40"></a>
-            <hr>
+        <div class="hobbyDiv"><img src="/css/img/Gundam.avif" height="1059" width="1770">
+          <p>Gundam</p>
         </div>
-        <!-- Insert Arrow -->
-
-        <div class="footerGrid"> <!--Insert 7 by grid-->
-            <p class="footerTitles">EXTRAS</p>
-            <div class="contacts">
-                <p class="footerTitles">BUSINESS</p>
-                <div class="footerFlex">
-                    <a>email</a>
-                    <a>Linkedin</a>
-                    <a>Resume</a>
-                </div>
-            </div>
-            <div>
-                <p class="footerTitles">PAGES</p>
-                <div class="footerFlex">
-                    <a>Home</a>
-                    <a>Works</a>
-                    <a>About</a>
-                    <a>Contacts</a>
-                </div>
-            </div>
-            <div>
-                <p class="footerTitles">CREDITS</p>
-                <div class="footerFlex">
-                    <p>Designed by DC</p>
-                    <p>Last Updated: 2025</p>
-                </div>
-            </div>
+        <div class="hobbyDiv"><img src="/css/img/Drawing.avif" height="1059" width="1770">
+          <p>Drawing the places I go</p>
         </div>
-    </footer>
-
-</body>
-
-</html>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footerContact">
+    <p>(CONTACT)</p>
+    <p class="footerContactHeader">INTERESTED IN WORKING TOGETHER?</p><a class="footerContactLink" href="mailto:desmchen@telus.net?subject=Lets%20work%20on%20something%20together">SEND ME A MESSAGE <img class="footerArrow" alt="link to a sending a message" src="css/img/icons/LargeArrow.svg" height="40" width="40"></a>
+    <hr>
+  </div>
+  <!-- Insert Arrow-->
+  <div class="footerGrid">
+    <!-- Insert 7 by grid-->
+    <p class="footerTitles">EXTRAS</p>
+    <div class="contacts">
+      <p class="footerTitles">BUSINESS</p>
+      <div class="footerFlex"><a href="mailto:desmchen@telus.net?subject=Lets%20work%20on%20something%20together">email</a><a href="https://www.linkedin.com/in/desmond-chen-468b28277/" target="_blank" rel="noopener noreferrer">Linkedin</a><a href="https://drive.google.com/file/d/1UwBm8nddmK0KD4YlyWKBe_Ptv18u-9CQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a></div>
+    </div>
+    <div>
+      <p class="footerTitles">PAGES</p>
+      <div class="footerFlex"><a href="/index.html">Home</a><a href="/HTMLFiles/Work.html">Works</a><a href="/HTMLFiles/About.html">About</a></div>
+    </div>
+    <div>
+      <p class="footerTitles">CREDITS</p>
+      <div class="footerFlex">
+        <p>Designed &amp; Coded by DC</p>
+        <p>Last Updated: 2025</p>
+      </div>
+    </div>
+  </div>
+</footer>
