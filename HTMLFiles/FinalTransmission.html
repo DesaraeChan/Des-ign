@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Duban Case Study - Desmond Chen</title>
+    <link rel="icon" type="image/x-icon" href="/css/img/icons/MainIcon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="/JavaScript/fadeIn.js" defer></script>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="onTopOfCase">
+        <nav class="navbar">
+            <a href="/index.html" class="homeIcon">
+                <img src="/css/img/icons/homeButton.gif" width="50" height="50">
+            </a>
+
+            <div class="navLinks">
+                <a href="/HTMLFiles/Work.html">work</a>
+                <a href="/HTMLFiles/About.html">about</a>
+                <a href="https://drive.google.com/file/d/1CEsf2h-suVlxp9FKgOKLs79PEW1iw4vz/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">resume</a>
+            </div>
+
+            <button class="Sandwich" aria-label="Sandwich Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobileLinks">
+
+            <a href="/HTMLFiles/Work.html" class="innerLinks" id="NavLinkOne">
+                <p>01</p>
+                <p>Works</p>
+            </a>
+            <a class="innerLinks" href="/HTMLFiles/About.html">
+                <p>02</p>
+                <p>About</p>
+            </a>
+            <a class="innerLinks" href="#">
+                <p>03</p>
+                <p>Resume</p>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <img class="caseImg" alt="Final Transmission Escape Room Devices"
+                src="/css/img/FinalTransmissionImg/TransmissionHeader.png" height="600" weight="1000">
+            <div class="caseContainer">
+                <div>
+                    <h1 class="caseTitle finalTransmissionName">Final </h1>
+                    <h1 class="caseTitle finalTransmissionName">Transmission</h1>
+                    <p>School Project</p>
+                </div>
+                <div>
+                    <p class="descriptionSubhead">Summary</p>
+                    <h2 class="descriptionHeader">An immersive escape room experience, exploring wireless device
+                        networks and collaborative player interactions. </h2>
+                    <hr>
+                    <div class="descriptionRoles">
+                        <div>
+                            <p class="roleTitles">Role</p>
+                            <p>Conceptualizing core mechanics,
+                                Programming interactions,
+                                Physical fabrication</p>
+                        </div>
+                        <div>
+                            <p class="roleTitles">Tools</p>
+                            <p>Processing,
+                                Arduino,
+                                Woodworking tools (bandsaws, sanders, drill presses)</p>
+                        </div>
+                        <div>
+                            <p class="roleTitles">Duration</p>
+                            <p>4 weeks, Spring 2025</p>
+                        </div>
+                        <div>
+                            <p class="roleTitles">Team</p>
+                            <p>Jonah Van Kessel, Vina Setiawaty, Rohan Wagh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="caseContainer grayBG">
+                <img class="caseMeImg" src="/css/img/AlbertImg/DrawingMe.svg"
+                    alt="Drawing of me with a sword out in the open">
+                <div>
+                    <h2 class="whyStatementHead">The Design Brief</h2>
+                    <p>We had to design a connected escape room with multiple components that interact with each other
+                        across a shared wireless network. The experience had to be immersive, and promote collaboration
+                        between at least two players.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="projectSection">
+            <p>Ideation</p>
+            <div class="finalTGrid">
+                <div>
+
+                    <h3 class="explanationHeading">Imagine this: You're trapped in a sinking submarine. There’s one
+                        other person onboard, but you can't see them, and can't speak to them. To get out of this
+                        situation, you have to solve interconnected puzzles.</h3>
+                </div>
+
+                <div class="finalTIdeationText">
+                    <p>This is the thematic idea and the core game mechanic I introduced, an escape room where the two
+                        players are separated and can’t communicate with each other at all. All coordination had to
+                        happen through the devices (puzzle modules): basic colour signals, audio cues, and text input.
+                    </p>
+                    <p class="finalTHypothesis">The hypothesis was that players would improvise their own communication
+                        systems on the fly, creating an emergent and personal problem-solving experience. We wanted the
+                        constraint to feel meaningful and uniquely challenging.</p>
+                    <p class="finalTIdeationBotText">The inspiration for this idea came from games such as Keep Talking
+                        and No One Explodes. One player with a manual and another with a bomb must coordiate how to
+                        solve the puzzles on the bomb without seeing each others tools</p>
+                    <img class="finalTKTNOEImage" src="/css/img/FinalTransmissionImg/KTANOEImage.png"
+                        alt="Image of game Keep Talking and no one explodes" width="642" height="361">
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projectSection">
+            <p>System Design</p>
+            <h3 class="explanationHeading shrink">I mapped the device ecosystem from the start, defining the logic that
+                would link both players' interactions and move both players toward puzzle completion.</h3>
+            <img class="finalTConnectionDiagram" src="/css/img/FinalTransmissionImg/ConnectionMap.svg"
+                alt="Connection Diagram of all the components in the escape room">
+            <div class="finalTGrid">
+                <p class="finalTTextPaddingR">One of my primary contributions for this project was establishing the
+                    wireless communication protocol
+                    between all the devices, using an OOCSI (A middleware prototyping wireless communication
+                    architecture) protocol. It was my first time connecting multiple Arduino modules together to create
+                    a fully connected ioT system. </p>
+                <p class="finalTTextPaddingR">I also owned the full design of the RFID sensor module, which was one of
+                    the 3 main modules used
+                    needed to complete the puzzles. The ESP32 module was connected to a RFID sensor and an assortment of
+                    tags, which transmitted data to the other modules to indicate if it read the codes in the correct
+                    sequence.</p>
+            </div>
+        </section>
+
+        <section class="projectSection">
+            <p>Fabrication and Art Direction</p>
+            <h3 class="explanationHeading shrink">To create the most immersive player experience, the fabrication and
+                finishing of each module required a clear art direction to reinforce the theme of a worn submarine
+                interface.</h3>
+            <div class="finalTFabricationGrid">
+                <div>
+                    <img class="finalTImageFabrication" src="/css/img/FinalTransmissionImg/RFIDDevice.png"
+                        alt="Image of the RFID device up close">
+                    <p>For all of the devices, I used woodworking tools such as bandsaws and sanders to create the tags
+                        and the housings, and used sandpaper and weathering painting techniques to create a worn
+                        appearance. </p>
+                </div>
+                <div>
+                    <img class="finalTImageFabrication" src="/css/img/FinalTransmissionImg/MechanicTerminalUI.png"
+                        alt="UI of the Mechanics console up close">
+                    <p>I also programmed the interface for the mechanics terminal in processing. The UI was inspired by
+                        80’s home HiFi systems and car digital dashboards, which helped make a more immersive theme.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projectSection">
+            <p>Play Testing</p>
+            <h3 class="explanationHeading shrink">We ran play testing sessions with three groups of people who had no
+                prior knowledge of the puzzles. This was the most revealing phase of the project.</h3>
+            <img src="/css/img/FinalTransmissionImg/playTesting.png" class="finalTImageFabrication"
+                alt="play testers going through the escape room">
+            <div class="finalTFabricationGrid">
+                <div>
+                    <h3>The puzzles were too difficult, especially with the lack of communication channels available.
+                    </h3>
+                    <p>For all of the devices, I used woodworking tools such as bandsaws and sanders to create the tags
+                        and the housings, and used sandpaper and weathering painting techniques to create a worn
+                        appearance. </p>
+                </div>
+                <div>
+                    <h3>Silence made the experience feel stressful, not just challenging.</h3>
+                    <p>I also programmed the interface for the mechanics terminal in processing. The UI was inspired by
+                        80’s home HiFi systems and car digital dashboards, which helped make a more immersive theme.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="darkGrayBG projectSection">
+
+
+            <p class="finalSubHeading whiteText">Final Escape Room</p>
+            <h3 class="explanationHeading whiteText shrink">
+                In the final iteration, we allowed players to converse and collaborate while still keeping their puzzles
+                hidden from each other. Completion rates improved, and the experience felt appropriately challenging and
+                fun rather than frustrating.
+            </h3>
+
+
+            <div class="finalTFabricationGrid">
+                <img src="/css/img/FinalTransmissionImg/FinalT1.png" height="483" width="363"
+                    alt="Close up of magnets in board and piece">
+                <img src="/css/img/FinalTransmissionImg/FinalT2.png" height="483" width="363"
+                    alt="Pieces placed on the board">
+            </div>
+
+
+            <p class="finalSubHeading whiteText">Takeaways</p>
+            <div class="finalTGrid">
+                <div>
+                    <h3 class="explanationHeading whiteText finalTTextPaddingR">Test with strangers, early and often
+                    </h3>
+                    <p class="whiteText finalTTextPaddingR">As a designer, it’s easy to become familiar with my
+                        understanding of how the game (or any product) should be used, assuming that others will think
+                        about it in the same way, even if they don’t have the same context as me. If I were to do this
+                        project again, I would spend an equal amount of time testing with people outside of the team as
+                        I spent building the modules.</p>
+                </div>
+                <div>
+                    <h3 class="explanationHeading whiteText finalTTextPaddingR">Connected systems require end-to-end experience thinking.
+                    </h3>
+                    <p class="whiteText finalTTextPaddingR">Designing networked devices means accounting for every
+                        state: what happens when a puzzle is solved, when it's failed, when signals are ambiguous.
+                        Working on the cross-device communication taught me how quickly edge cases multiply in IoT
+                        contexts. </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

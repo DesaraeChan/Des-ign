@@ -779,6 +779,20 @@ footer {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-bottom: 7rem;
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js .projectSection {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.js .projectSection.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .darkGrayBG {
@@ -861,7 +875,7 @@ footer {
     line-height: 1.5;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
-    padding-right: 1.5rem;
+    padding-right: 3rem;
 
 }
 
@@ -1132,11 +1146,8 @@ footer {
 }
 
 .assemblyFlex img {
-    position: absolute;
-    max-width: 50%;
+    width: 100%;
     height: auto;
-    right: 0;
-    bottom: 0;
 }
 
 .finalSubHeading {
@@ -1216,10 +1227,12 @@ footer {
 
 }
 
-.dubanFoamGrid {
+.dubanFoamGrid, .finalTGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
 
 .dubanFoamPhotoGrid {
     display: grid;
@@ -1250,13 +1263,20 @@ footer {
 }
 
 
-.dubanRefinementImageFlex figure img, .dubanRenderGrid figure img {
+.dubanRefinementImageFlex figure img, .dubanRenderGrid figure img, .finalTKTNOEImage {
    width: 100%;
    height: auto;
    border-radius: 2rem;
 }
 
-
+.finalTConnectionDiagram{
+    width: 100%;
+   height: auto;
+   border-radius: 2rem;
+   padding: 6rem;
+    background-color: #F0F0F0;
+    margin-top: 2rem;
+}
 
 .dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
     padding-top: 0.5rem;
@@ -1284,6 +1304,48 @@ footer {
     gap: 2rem;
 }
 
+/* Final Transmission */
+.finalTransmissionName{
+    font-size: 4.75vw;
+}
+
+.finalTHypothesis{
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #383838;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.finalTIdeationText{
+    margin-top: 1rem;
+}
+
+.finalTIdeationBotText{
+    margin-bottom: 1rem;
+}
+
+.finalTTextPaddingR{
+    margin-top: 1rem;
+    padding-right: 3rem;
+}
+
+.finalTImageFabrication{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.finalTFabricationGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.finalTFabricationGrid img{
+    width: 100%;
+    height: auto;
+}
 
 @media(width < 74rem) {
     .errorGrid {
@@ -1454,12 +1516,20 @@ footer {
 }
 
 @media(width < 57rem) {
-    .caseContainer, .dubanFoamGrid {
+    .caseContainer, .dubanFoamGrid, .finalTFabricationGrid{
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
+    .finalTGrid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finalTIdeationText{
+        margin-top: 0;
+    }
     .caseMeImg {
 
         height: auto;
@@ -1485,6 +1555,9 @@ footer {
         max-width: 100%;
     }
 
+    .finalTransmissionName{
+    font-size: 10vw;
+}
 }
 
 @media(width < 55rem) {
@@ -1642,11 +1715,12 @@ footer {
 
     }
 
-    .dubanRefinementImageFlex, .dubanRenderImage{
+    .dubanRefinementImageFlex, .dubanRenderImage, .finalTConnectionDiagram{
         display: block;
     padding: 2rem;
 
 }
+
 .dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
     padding-top: 1rem;
    text-align: center;
@@ -1658,6 +1732,8 @@ footer {
 .dubanpointList {
     padding-right: 1.5rem;
 }
+
+
 }
 
 @media(width < 50rem) {
@@ -1990,6 +2066,10 @@ footer {
         background-color: #F5F0EA;
         border-radius: 2rem;
     }
+
+    .finalTransmissionName{
+    font-size: 10vw;
+}
 }
 
 @media(width < 25rem) {
