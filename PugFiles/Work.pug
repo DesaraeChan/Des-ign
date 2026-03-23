@@ -29,7 +29,7 @@ main
       // need to add pop in widths
     .featureGrid
       a#albertFeature.featureProject(href='/HTMLFiles/Albert.html')
-        .featureContent
+        div
           h3.titleFeature Albert Sheath
           #albertKeyword.featureKeywordFlex
             p Personal Project
@@ -37,11 +37,30 @@ main
           p.featureText Fencing accessory made from recycled materials
           img#albertFeatureImg(src='/css/img/AlbertFeature.avif' alt='Albert with sword')
       a#finalTransmissionFeature.featureProject(href='/HTMLFiles/FinalTransmission.html')
-        .featureContent
+        div
           h3.titleFeature Final Transmission
           #finalTransKeyword.featureKeywordFlex
             p Student Project
             p Interconnected Devices
           p.featureText An escape room experience built with a network of wireless devices
           img#finalFeatureImg(src='/css/img/FinalFeature.avif' alt='Final Transmission Escape Room')
+  section.homeSection
+    h2.featureHeader In my spare time
+    .featureGrid
+      a#stonePFeature.featureProject(href='/HTMLFiles/StonePond.html')
+        div
+          h3.titleFeature Stone Pond
+          #stonePKeyword.featureKeywordFlex
+            p Personal Project
+            p FDM Manufacturing
+          p.featureText An Ikebana Bowl of my own design
+          img.standardFeatureImg(src='/css/img/StonePondImg/StonePHeader.png' alt='Ikebana Bowl with flower arrangment inside')
+      a#TTRFeature.featureProject(href='/HTMLFiles/TakeTheReins.html')
+        div
+          h3.titleFeature Take The Reins
+          #TTRKeyword.featureKeywordFlex
+            p School Project
+            p Board Game Design
+          p.featureText A Board game that explores the ethical hardships of horse racing
+          img.standardFeatureImg(src='/css/img/TakeTheReinsImg/TTRHeader.jpg' alt='Take the Reins Boardgame Spread out on a table')
 include inc/_footer
