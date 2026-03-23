@@ -19,11 +19,14 @@ sandToggle.addEventListener("click", () => {
     isVisible = !isVisible;
 
     sandToggle.classList.toggle('active');
-    mobileLinks.classList.toggle("active");
     navbar.classList.toggle("active");
+
     if (isVisible) {
+        mobileLinks.classList.add("active");
+
         sandToggle.setAttribute('aria-expanded', 'true');
     } else {
+        mobileLinks.classList.remove("active");
         sandToggle.setAttribute('aria-expanded', 'false');
     }
 });

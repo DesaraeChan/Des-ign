@@ -34,19 +34,20 @@
             </button>
         </nav>
         <div class="mobileLinks">
-
-            <a href="/HTMLFiles/Work.html" class="innerLinks" id="NavLinkOne">
-                <p>01</p>
-                <p>Works</p>
-            </a>
-            <a class="innerLinks" href="/HTMLFiles/About.html">
-                <p>02</p>
-                <p>About</p>
-            </a>
-            <a class="innerLinks" href="#">
-                <p>03</p>
-                <p>Resume</p>
-            </a>
+            <div class="mobileLinksInner">
+                <a href="/HTMLFiles/Work.html" class="innerLinks" id="NavLinkOne">
+                    <p>01</p>
+                    <p>Works</p>
+                </a>
+                <a class="innerLinks" href="/HTMLFiles/About.html">
+                    <p>02</p>
+                    <p>About</p>
+                </a>
+                <a class="innerLinks" href="#">
+                    <p>03</p>
+                    <p>Resume</p>
+                </a>
+            </div>
         </div>
 
     </header>
@@ -139,13 +140,13 @@
                 would link both players' interactions and move both players toward puzzle completion.</h3>
             <img class="finalTConnectionDiagram" src="/css/img/FinalTransmissionImg/ConnectionMap.svg"
                 alt="Connection Diagram of all the components in the escape room">
-            <div class="finalTGrid">
-                <p class="finalTTextPaddingR">One of my primary contributions for this project was establishing the
+            <div>
+                <p class="finalTTextPaddingR shrink">One of my primary contributions for this project was establishing the
                     wireless communication protocol
                     between all the devices, using an OOCSI (A middleware prototyping wireless communication
                     architecture) protocol. It was my first time connecting multiple Arduino modules together to create
                     a fully connected ioT system. </p>
-                <p class="finalTTextPaddingR">I also owned the full design of the RFID sensor module, which was one of
+                <p class="finalTTextPaddingR shrink">I also owned the full design of the RFID sensor module, which was one of
                     the 3 main modules used
                     needed to complete the puzzles. The ESP32 module was connected to a RFID sensor and an assortment of
                     tags, which transmitted data to the other modules to indicate if it read the codes in the correct
