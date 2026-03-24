@@ -761,7 +761,7 @@ footer {
 }
 
 .aboutText img:not(.aboutInterestDiv img) {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
