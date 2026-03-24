@@ -175,7 +175,7 @@ figcaption {
     border-color: #666666;
     border-style: solid solid solid solid;
     padding: 2rem 2rem;
-   
+
 }
 
 
@@ -204,7 +204,7 @@ figcaption {
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    
+
 
     border-radius: 1rem;
 }
@@ -243,7 +243,8 @@ figcaption {
     z-index: 0;
 }
 
-.innerLinks:hover::before, .innerLinks:focus::before {
+.innerLinks:hover::before,
+.innerLinks:focus::before {
     transform: translateX(0);
 }
 
@@ -253,7 +254,8 @@ figcaption {
     transition: color 0.3s ease;
 }
 
-.innerLinks:hover p, .innerLinks:focus p {
+.innerLinks:hover p,
+.innerLinks:focus p {
     color: black;
 }
 
@@ -332,7 +334,7 @@ figcaption {
     opacity: 1;
 }
 
-.onTopOfCase .navbar .Sandwich span{
+.onTopOfCase .navbar .Sandwich span {
     background-color: white;
 }
 
@@ -555,7 +557,7 @@ figcaption {
     color: white;
 }
 
-#TTRFeature{
+#TTRFeature {
     color: rgb(255, 255, 255);
 }
 
@@ -599,7 +601,7 @@ figcaption {
     transition: scale 0.5s ease-in-out;
 }
 
-.featureProject:hover .standardFeatureImg{
+.featureProject:hover .standardFeatureImg {
     scale: 1.1;
 }
 
@@ -650,6 +652,7 @@ figcaption {
 #TTRKeyword p {
     background-color: #b88943;
 }
+
 .featureText {
     font-size: 1.75rem;
     max-width: 30rem;
@@ -734,7 +737,7 @@ footer {
     gap: 0.75rem;
 }
 
-.footerFlex a{
+.footerFlex a {
     text-decoration: none;
     color: white;
 }
@@ -757,7 +760,7 @@ footer {
 
 }
 
-.aboutText img {
+.aboutText img:not(.aboutInterestDiv img) {
     max-width: 80%;
     height: auto;
     object-fit: contain;
@@ -780,8 +783,8 @@ footer {
 }
 
 .aboutFlex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutFlex h2 {
@@ -828,6 +831,14 @@ footer {
     flex: 1;
 }
 
+.aboutHobbyDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+
+
 .hobbyDiv {
     margin-bottom: 2rem;
 }
@@ -858,12 +869,12 @@ footer {
 
 .caseContainer {
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     margin: 2rem 8rem;
     padding: 3rem 3rem;
     background-color: #F5F0EA;
     border-radius: 2rem;
+    align-items: start;
 }
 
 .caseImg {
@@ -880,6 +891,11 @@ footer {
     font-size: 5rem;
     margin: 0;
     padding: 0;
+    line-height: 1;
+}
+
+.projectCaseSubTitle {
+    padding-top: 0.5rem;
 }
 
 .projectSection {
@@ -919,11 +935,9 @@ footer {
 }
 
 .caseMeImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: auto;
+    width: 100%;
+    max-height: 20rem;
+    object-fit: contain;
 }
 
 .descriptionSubhead {
@@ -981,7 +995,7 @@ footer {
     font-weight: 400;
     line-height: 1.5;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     padding-right: 3rem;
 
 }
@@ -1007,7 +1021,7 @@ footer {
     max-width: 50%;
 }
 
-.overHeadPadding{
+.overHeadPadding {
     Padding-top: 3rem;
 }
 
@@ -1024,6 +1038,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+}
+
+.explanationFlex img {
+    width: 100%;
+    height: auto;
 }
 
 .subExplanationHeading {
@@ -1269,14 +1288,15 @@ footer {
     gap: 2rem;
 }
 
-.finalAlbertGrid img, .finalDubanGrid img {
+.finalAlbertGrid img,
+.finalDubanGrid img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.finalDubanGrid{
+.finalDubanGrid {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1331,10 +1351,16 @@ footer {
     height: 18rem;
     border-radius: 2rem;
     object-fit: contain;
+    mix-blend-mode: multiply;
 
 }
 
-.dubanFoamGrid, .finalTGrid {
+.dubanExplanationTripleGrid figure figcaption {
+    text-align: center;
+}
+
+.dubanFoamGrid,
+.finalTGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1348,7 +1374,8 @@ footer {
     gap: 2rem;
 }
 
-.dubanFoamPhotoGrid img, .dubanFoamGrid img {
+.dubanFoamPhotoGrid img,
+.dubanFoamGrid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1360,7 +1387,7 @@ footer {
     grid-row: span 2;
 }
 
-.dubanRefinementImageFlex{
+.dubanRefinementImageFlex {
     display: flex;
     padding: 6rem;
     background-color: white;
@@ -1370,42 +1397,45 @@ footer {
 }
 
 
-.dubanRefinementImageFlex figure img, .dubanRenderGrid figure img, .finalTKTNOEImage {
-   width: 100%;
-   height: auto;
-   border-radius: 2rem;
+.dubanRefinementImageFlex figure img,
+.dubanRenderGrid figure img,
+.finalTKTNOEImage {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
 }
 
-.finalTConnectionDiagram{
+.finalTConnectionDiagram {
     width: 100%;
-   height: auto;
-   border-radius: 2rem;
-   padding: 6rem;
+    height: auto;
+    border-radius: 2rem;
+    padding: 6rem;
     background-color: #F5F0EA;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
+.dubanRefinementImageFlex figure figcaption,
+.dubanRenderGrid figure figcaption {
     padding-top: 0.5rem;
-   text-align: center;
-   margin-left: auto;
+    text-align: center;
+    margin-left: auto;
     margin-right: auto;
-   width: 60%;
+    width: 60%;
 }
 
-.dubanRenderImage{
+.dubanRenderImage {
     border: 1px solid black;
     border-radius: 2rem;
     padding: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
-   height: auto;
+    height: auto;
 
 }
 
-.dubanRenderGrid{
+.dubanRenderGrid {
     margin-top: 2rem;
     display: Grid;
     grid-template-columns: 1fr 1fr;
@@ -1413,11 +1443,11 @@ footer {
 }
 
 /* Final Transmission */
-.finalTransmissionName{
+.finalTransmissionName {
     font-size: 4.75vw;
 }
 
-.finalTHypothesis{
+.finalTHypothesis {
     font-style: italic;
     font-size: 1.5rem;
     color: #383838;
@@ -1425,36 +1455,38 @@ footer {
     margin-bottom: 2rem;
 }
 
-.finalTIdeationText{
+.finalTIdeationText {
     margin-top: 1rem;
 }
 
-.finalTIdeationBotText{
-    margin-bottom: 1rem;
+.finalTIdeationBotText {
+    margin-bottom: 2.5rem;
 }
 
-.finalTTextPaddingR{
+.finalTTextPaddingR {
     margin-top: 1rem;
     padding-right: 3rem;
 }
 
-.finalTImageFabrication{
+.finalTImageFabrication {
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
     padding-top: 1rem;
 }
 
-.finalTFabricationGrid{
+.finalTFabricationGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     padding-top: 1rem;
 }
 
-.finalTFabricationGrid img{
+.finalTFabricationGrid img, .finalTFabricationGrid iframe {
     width: 100%;
     height: auto;
+    aspect-ratio: 932 / 638; /* your image's width / height */
+    border-radius: 2rem;
 }
 
 @media(width < 74rem) {
@@ -1626,20 +1658,24 @@ footer {
 }
 
 @media(width < 57rem) {
-    .caseContainer, .dubanFoamGrid, .finalTFabricationGrid{
+
+    .caseContainer,
+    .dubanFoamGrid,
+    .finalTFabricationGrid {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
-    .finalTGrid{
+    .finalTGrid {
         display: flex;
         flex-direction: column;
     }
 
-    .finalTIdeationText{
+    .finalTIdeationText {
         margin-top: 0;
     }
+
     .caseMeImg {
 
         height: auto;
@@ -1665,9 +1701,9 @@ footer {
         max-width: 100%;
     }
 
-    .finalTransmissionName{
-    font-size: 10vw;
-}
+    .finalTransmissionName {
+        font-size: 10vw;
+    }
 }
 
 @media(width < 55rem) {
@@ -1797,7 +1833,7 @@ footer {
         flex-direction: column;
     }
 
-    .aboutText img {
+    .aboutText img:not(.aboutInterestDiv img) {
         margin: 0;
         width: 100%;
         max-width: 25rem;
@@ -1806,12 +1842,14 @@ footer {
         flex-shrink: 1;
     }
 
-    .aboutFlex {
+
+    .aboutHobbyDiv {
         display: flex;
         flex-direction: column;
     }
 
-    .dubanExplanationTripleGrid, .dubanRenderGrid {
+    .dubanExplanationTripleGrid,
+    .dubanRenderGrid {
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -1825,23 +1863,26 @@ footer {
 
     }
 
-    .dubanRefinementImageFlex, .dubanRenderImage, .finalTConnectionDiagram{
+    .dubanRefinementImageFlex,
+    .dubanRenderImage,
+    .finalTConnectionDiagram {
         display: block;
-    padding: 2rem;
+        padding: 2rem;
 
-}
+    }
 
-.dubanRefinementImageFlex figure figcaption, .dubanRenderGrid figure figcaption{
-    padding-top: 1rem;
-   text-align: center;
-   margin-left: auto;
-    margin-right: auto;
-   width: 80%;
-}
+    .dubanRefinementImageFlex figure figcaption,
+    .dubanRenderGrid figure figcaption {
+        padding-top: 1rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 
-.dubanpointList {
-    padding-right: 1.5rem;
-}
+    .dubanpointList {
+        padding-right: 1.5rem;
+    }
 
 
 }
@@ -2177,9 +2218,9 @@ footer {
         border-radius: 2rem;
     }
 
-    .finalTransmissionName{
-    font-size: 10vw;
-}
+    .finalTransmissionName {
+        font-size: 10vw;
+    }
 }
 
 @media(width < 25rem) {

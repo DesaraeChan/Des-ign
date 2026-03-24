@@ -1,0 +1,162 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Final Transmission - Desmond Chen
+  link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='/JavaScript/fadeIn.js' defer='')
+  link(href='/css/main.css' rel='stylesheet')
+include inc/_navCase
+main
+  section
+    img.caseImg(alt='Final Transmission Escape Room Devices' src='/css/img/FinalTransmissionImg/TransmissionHeader.png' height='600' weight='1000')
+    .caseContainer
+      div
+        h1.caseTitle.finalTransmissionName Final 
+        h1.caseTitle.finalTransmissionName Transmission
+        p.projectCaseSubTitle School Project
+      div
+        p.descriptionSubhead Summary
+        h2.descriptionHeader
+          | An immersive escape room experience, exploring wireless device
+          | networks and collaborative player interactions.
+        hr
+        .descriptionRoles
+          div
+            p.roleTitles Role
+            p
+              | Conceptualizing core mechanics,
+              | Programming interactions,
+              | Physical fabrication
+          div
+            p.roleTitles Tools
+            p
+              | Processing,
+              | Arduino,
+              | Woodworking tools (bandsaws, sanders, drill presses)
+          div
+            p.roleTitles Duration
+            p 4 weeks, Spring 2025
+          div
+            p.roleTitles Team
+            p Jonah Van Kessel, Vina Setiawaty, Rohan Wagh
+  section
+    .caseContainer.grayBG
+      img.caseMeImg(src='/css/img/AlbertImg/DrawingMe.svg' alt='Drawing of me with a sword out in the open')
+      div
+        h2.whyStatementHead The Design Brief
+        p
+          | We had to design a connected escape room with multiple components that interact with each other
+          | across a shared wireless network. The experience had to be immersive, and promote collaboration
+          | between at least two players.
+  section.projectSection
+    p Ideation
+    .finalTGrid
+      div
+        h3.explanationHeading
+          | Imagine this: You&apos;re trapped in a sinking submarine. There&rsquo;s one
+          | other person onboard, but you can&apos;t see them, and can&apos;t speak to them. To get out of this
+          | situation, you have to solve interconnected puzzles.
+      .finalTIdeationText
+        p
+          | This is the thematic idea and the core game mechanic I introduced, an escape room where the two
+          | players are separated and can&rsquo;t communicate with each other at all. All coordination had to
+          | happen through the devices (puzzle modules): basic colour signals, audio cues, and text input.
+        p.finalTHypothesis
+          | The hypothesis was that players would improvise their own communication
+          | systems on the fly, creating an emergent and personal problem-solving experience. We wanted the
+          | constraint to feel meaningful and uniquely challenging.
+        p.finalTIdeationBotText
+          | The inspiration for this idea came from games such as Keep Talking
+          | and No One Explodes. One player with a manual and another with a bomb must coordiate how to
+          | solve the puzzles on the bomb without seeing each others tools
+        img.finalTKTNOEImage(src='/css/img/FinalTransmissionImg/KTANOEImage.png' alt='Image of game Keep Talking and no one explodes' width='642' height='361')
+  section.projectSection
+    p System Design
+    h3.explanationHeading.shrink
+      | I mapped the device ecosystem from the start, defining the logic that
+      | would link both players&apos; interactions and move both players toward puzzle completion.
+    img.finalTConnectionDiagram(src='/css/img/FinalTransmissionImg/ConnectionMap.svg' alt='Connection Diagram of all the components in the escape room')
+    div
+      p.finalTTextPaddingR.shrink
+        | One of my primary contributions for this project was establishing the
+        | wireless communication protocol
+        | between all the devices, using an OOCSI (A middleware prototyping wireless communication
+        | architecture) protocol. It was my first time connecting multiple Arduino modules together to create
+        | a fully connected ioT system.
+      p.finalTTextPaddingR.shrink
+        | I also owned the full design of the RFID sensor module, which was one of
+        | the 3 main modules used
+        | needed to complete the puzzles. The ESP32 module was connected to a RFID sensor and an assortment of
+        | tags, which transmitted data to the other modules to indicate if it read the codes in the correct
+        | sequence.
+  section.projectSection
+    p Fabrication and Art Direction
+    h3.explanationHeading.shrink
+      | To create the most immersive player experience, the fabrication and
+      | finishing of each module required a clear art direction to reinforce the theme of a worn submarine
+      | interface.
+    .finalTFabricationGrid
+      div
+        img.finalTImageFabrication(src='/css/img/FinalTransmissionImg/RFIDDevice.png' alt='Image of the RFID device up close')
+        p
+          | For all of the devices, I used woodworking tools such as bandsaws and sanders to create the tags
+          | and the housings, and used sandpaper and weathering painting techniques to create a worn
+          | appearance.
+      div
+        img.finalTImageFabrication(src='/css/img/FinalTransmissionImg/MechanicTerminalUI.png' alt='UI of the Mechanics console up close')
+        p
+          | I also programmed the interface for the mechanics terminal in processing. The UI was inspired by
+          | 80&rsquo;s home HiFi systems and car digital dashboards, which helped make a more immersive theme.
+  section.projectSection
+    p Play Testing
+    h3.explanationHeading.shrink
+      | We ran play testing sessions with three groups of people who had no
+      | prior knowledge of the puzzles. This was the most revealing phase of the project.
+    img.finalTImageFabrication(src='/css/img/FinalTransmissionImg/playTesting.png' alt='play testers going through the escape room')
+    .finalTFabricationGrid
+      div
+        h3
+          | The puzzles were too difficult, especially with the lack of communication channels available.
+        p
+          | For all of the devices, I used woodworking tools such as bandsaws and sanders to create the tags
+          | and the housings, and used sandpaper and weathering painting techniques to create a worn
+          | appearance.
+      div
+        h3 Silence made the experience feel stressful, not just challenging.
+        p
+          | I also programmed the interface for the mechanics terminal in processing. The UI was inspired by
+          | 80&rsquo;s home HiFi systems and car digital dashboards, which helped make a more immersive theme.
+  section.darkGrayBG.projectSection
+    p.finalSubHeading.whiteText Final Escape Room
+    h3.explanationHeading.whiteText.shrink
+      | In the final iteration, we allowed players to converse and collaborate while still keeping their puzzles
+      | hidden from each other. Completion rates improved, and the experience felt appropriately challenging and
+      | fun rather than frustrating.
+    .finalTFabricationGrid
+      img(src='/css/img/FinalTransmissionImg/FinalT1.png' height='483' width='363' alt='Close up of magnets in board and piece')
+      iframe(width='560' height='315' src='https://www.youtube.com/embed/4mfwZgAqMfA?si=PxPHEGF57Ywpzj08' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen='')
+    p.finalSubHeading.whiteText Takeaways
+    .finalTGrid
+      div
+        h3.explanationHeading.whiteText.finalTTextPaddingR
+          | Test with strangers, early and often
+        p.whiteText.finalTTextPaddingR
+          | As a designer, it&rsquo;s easy to become familiar with my
+          | understanding of how the game (or any product) should be used, assuming that others will think
+          | about it in the same way, even if they don&rsquo;t have the same context as me. If I were to do this
+          | project again, I would spend an equal amount of time testing with people outside of the team as
+          | I spent building the modules.
+      div
+        h3.explanationHeading.whiteText.finalTTextPaddingR
+          | Connected systems require end-to-end experience thinking.
+        p.whiteText.finalTTextPaddingR
+          | Designing networked devices means accounting for every
+          | state: what happens when a puzzle is solved, when it&apos;s failed, when signals are ambiguous.
+          | Working on the cross-device communication taught me how quickly edge cases multiply in IoT
+          | contexts.
+include inc/_footer
+  

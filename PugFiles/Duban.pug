@@ -1,0 +1,155 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Duban Case Study - Desmond Chen
+  link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='/JavaScript/fadeIn.js' defer='')
+  link(href='/css/main.css' rel='stylesheet')
+include inc/_navCase
+main
+  section
+    img.caseImg(alt='Duban Chess Board in use' src='/css/img/DubanImg/DubanHeader.avif' height='600' weight='1000')
+    .caseContainer
+      div
+        h1.caseTitle Duban 
+        h1.caseTitle Chess Set
+        p.projectCaseSubTitle School Project
+      div
+        p.descriptionSubhead Summary
+        h2.descriptionHeader
+          | Duban makes chess accessible for the 6 million Canadians with
+          | arthritis, preserving elegance and easing play.
+        hr
+        .descriptionRoles
+          div
+            p.roleTitles Role
+            p 3D Modelling &amp; Rendering, Physical Prototyping, Research &amp; Ideation
+          div
+            p.roleTitles Tools
+            p
+              | Solidworks + Visualize,
+              | 3D Printing,
+              | Laser Cutting
+          div
+            p.roleTitles Duration
+            p 4 weeks, Fall 2024
+          div
+            p.roleTitles Team
+            p Kate Simeonoff (Researcher), Nadine Elkabir (3D Modelling &amp; Rendering) 
+  section
+    .caseContainer.grayBG
+      img.caseMeImg(src='/css/img/AlbertImg/DrawingMe.svg' alt='Drawing of me with a sword out in the open')
+      div
+        h2.whyStatementHead The Problem
+        p
+          | The manual dexterity needed to grip chess pieces causes frustration for users with arthritis,
+          | leading many longtime chess enthusiasts to give up a cherished leisure and social activity.
+          | While existing accessibility solutions (including our own concepts) offer greater comfort, they
+          | lack the simplicity and elegance of a traditional chess set, a crucial part of the experience.
+  section.projectSection
+    .albertResearch
+      p Ideation
+      h3.explanationHeading
+        | Generating broad solutions on pen and paper and deciding on what to push
+        | forward to prototyping.
+    .dubanExplanationTripleGrid
+      figure
+        img.chessPieceSketch(alt='Sketch with holes for hooks' src='/css/img/DubanImg/Sketches/ChessSketchDes.avif' height='200' width='400')
+        figcaption Using a finger hook and holes in the chess pieces
+      figure
+        img.chessPieceSketch(src='/css/img/DubanImg/Sketches/ChessSketchKate.avif' alt='Sketch with hourglass shape Pieces' height='200' width='400')
+        figcaption Hourglass shaped pieces
+      figure
+        img.chessPieceSketch(src='/css/img/DubanImg/Sketches/ChessSketchNed.avif' alt='Sketch with holes and high friction Pieces' height='200' width='400')
+        figcaption Pin and holes with grips
+  section.projectSection
+    .dubanFoamGrid
+      div
+        p Early Foam Prototypes
+        h3.explanationHeading
+          | Through prototype testing, I discovered a key winning feature:
+          | a
+          | wine glass-inspired design eliminating the need for gripping.
+        ul.dubanpointList
+          li
+            | I melted larger sheets of plastic together before cutting them to size, which allowed me to
+            | account for any shrinkage.
+          li
+            | Retesting the heating temperature helped me find the ideal melting temperature with the heat
+            | press, optimizing for durability and smoothness.
+          li
+            | I decided to repurpose an old nylon bag strap to ensure my sheath&rsquo;s strap was reliable in
+            | the long term.
+      .dubanFoamPhotoGrid
+        img(src='/css/img/DubanImg/PrototypeFinger.avif')
+        img(src='/css/img/DubanImg/Finger Hook.avif')
+        img(src='/css/img/DubanImg/Grip.avif')
+  section.projectSection
+    p Refinement
+    h3.explanationHeading.shrink Magnetizing towards a clearer direction
+    p.shrink
+      | Instead of pegs, magnets were able to snap the pieces in place and could easily be
+      | repositioned. They
+      | also prevented tipping which was our main pain point when error occurred in natural play. The piece
+      | designs were streamlined and given removable heads for gameplay purpose - A pawn that reached the end of
+      | the board could easily swap out its head with that of any other piece.
+    .dubanRefinementImageFlex
+      figure
+        img(src='/css/img/DubanImg/New Drafts.avif')
+        figcaption Considering the magnetized base and removable heads for piece promotion.
+      figure
+        img(src='/css/img/DubanImg/MeassuredPieces.avif')
+        figcaption Creating standardized bodies to be digitized.
+  section.projectSection
+    .dubanFoamGrid
+      div
+        p Early Foam Prototypes
+        h3.explanationHeading
+          | Through prototype testing, I discovered a key winning feature:
+          | a
+          | wine glass-inspired design eliminating the need for gripping.
+        ul.dubanpointList
+          li
+            | I melted larger sheets of plastic together before cutting them to size, which allowed me to
+            | account for any shrinkage.
+          li
+            | Retesting the heating temperature helped me find the ideal melting temperature with the heat
+            | press, optimizing for durability and smoothness.
+          li
+            | I decided to repurpose an old nylon bag strap to ensure my sheath&rsquo;s strap was reliable in
+            | the long term.
+      img(src='/css/img/DubanImg/FabricatedThings.avif')
+  section.darkGrayBG.projectSection
+    p.finalSubHeading.whiteText Final Physical Product
+    h3.explanationHeading.whiteText.shrink
+      | The final prototype made it clear that more comfortable chess for players with arthritis is not only
+      | possible but can also remain as elegant and recognizable as the traditional experience.
+    .finalDubanGrid
+      img(src='/css/img/DubanImg/ChessMagnetClose.avif' height='483' width='363' alt='Close up of magnets in board and piece')
+      img(src='/css/img/DubanImg/PieceOnBoard.avif' height='483' width='363' alt='Pieces placed on the board')
+      img(src='/css/img/DubanImg/HouseShot.avif' height='483' width='363' alt='Board Placed in a room')
+  section.projectSection.overHeadPadding
+    p Modeling and Rendering
+    h3.explanationHeading.shrink
+      | Refining the final concept in Solidworks, with material considerations
+    p.shrink
+      | Instead of a painted aesthetic that could wear away, I decided on a multi wood
+      | construction that gives a more classic and refined appearance. Softer materials such as felt and velour
+      | were added to the pieces and shelf to reduce noise during use and transport.
+    img.dubanRenderImage(src='/css/img/DubanImg/3DRender.avif')
+    p.shrink
+      | All the models were made in a combination of Blender, OnShape and Solidworks, then they
+      | were compiled and rendered in SolidWorks Visualize. The goal was to create a chess set that would fit in
+      | any classic home, so the furniture was chosen to reflect that feeling.
+    .dubanRenderGrid
+      figure
+        img(src='/css/img/DubanImg/Chess.avif')
+        figcaption Set up for gameplay
+      figure
+        img(src='/css/img/DubanImg/ChessSetup.avif')
+        figcaption Chess set in use
+include inc/_footer
