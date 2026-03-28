@@ -749,6 +749,7 @@ footer {
 }
 
 .footerFlex a {
+    font-family: "Aeonik", Verdana, sans-serif;
     text-decoration: none;
     color: white;
     position: relative;
