@@ -47,20 +47,27 @@ main
   section.homeSection
     h2.featureHeader In my spare time
     .featureGrid
-      a#stonePFeature.featureProject(href='/HTMLFiles/StonePond.html')
-        div
-          h3.titleFeature Stone Pond
-          #stonePKeyword.featureKeywordFlex
-            p Personal Project
-            p FDM Manufacturing
-          p.featureText An Ikebana Bowl of my own design
-          img.standardFeatureImg(src='/css/img/StonePondImg/StonePHeader.png' alt='Ikebana Bowl with flower arrangment inside')
-      a#TTRFeature.featureProject(href='/HTMLFiles/TakeTheReins.html')
-        div
-          h3.titleFeature Take The Reins
-          #TTRKeyword.featureKeywordFlex
-            p School Project
-            p Board Game Design
-          p.featureText A Board game that explores the ethical hardships of horse racing
-          img.standardFeatureImg(src='/css/img/TakeTheReinsImg/TTRHeader.jpg' alt='Take the Reins Boardgame Spread out on a table')
+      a.otherProject(href='/HTMLFiles/StonePond.html')
+        img.standardFeatureImg(src='/css/img/StonePondImg/StonePHeader.png' alt='Ikebana Bowl with flower arrangment inside')
+        h3.titleFeature Stone Pond
+        .otherKeyword.featureKeywordFlex
+          p Personal Project
+          p FDM Manufacturing
+        p.featureText An Ikebana Bowl of my own design
+      a.otherProject(href='/HTMLFiles/TakeTheReins.html')
+        img.standardFeatureImg(src='/css/img/TakeTheReinsImg/TTRHeader.jpg' alt='Take the Reins Boardgame Spread out on a table')
+        h3.titleFeature Take The Reins
+        .otherKeyword.featureKeywordFlex
+          p School Project
+          p Board Game Design
+        p.featureText A Board game that explores the ethical hardships of horse racing
+        
+      a.otherProject(href="./HTMLFiles/ConquestWeb.html")
+        img.standardFeatureImg(src='/css/img/TakeTheReinsImg/TTRHeader.jpg' alt='Take the Reins Boardgame Spread out on a table')
+        h3.titleFeature Conquest Ent. Website
+        .otherKeyword.featureKeywordFlex
+          p Contract Work
+          p CMS Web Building
+        p.featureText A digital platform to showcase custom home builds and strengthen client outreach 
+          
 include inc/_footer

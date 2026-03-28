@@ -576,6 +576,22 @@ figcaption {
     overflow: hidden;
 }
 
+.otherProject {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-radius: 2rem;
+    width: 100%;
+    overflow: hidden;
+    transition: rotate 0.2s ease-in-out;
+}
+
+.otherProject:hover, .otherProject:focus{
+    rotate: 1deg;
+}
+
 .titleFeature {
     font-size: 2.75rem;
     font-weight: 400;
@@ -592,16 +608,12 @@ figcaption {
 }
 
 .standardFeatureImg {
-    position: absolute;
+    border-radius: 1.5rem;
     inset: 0;
     width: 100%;
-    height: 100%;
+    max-height: 20rem;
     object-fit: cover;
-    transition: scale 0.5s ease-in-out;
-}
-
-.featureProject:hover .standardFeatureImg {
-    scale: 1.1;
+    
 }
 
 .featureProject:hover #albertFeatureImg {
@@ -640,17 +652,14 @@ figcaption {
     background-color: #C7C9CC;
 }
 
-#stonePKeyword p {
-    background-color: #cfcbbf;
+.otherKeyword p {
+    background-color: #cfcfcf;
 }
 
 #finalTransKeyword p {
     background-color: #464545;
 }
 
-#TTRKeyword p {
-    background-color: #b88943;
-}
 
 .featureText {
     font-size: 1.75rem;
@@ -1603,8 +1612,16 @@ footer {
         margin-bottom: 2rem;
         margin-top: 0rem;
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 2.1rem;
 
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .aboutSkills p {
+        font-size: 1.2rem;
     }
 
     .aboutInterestDiv {
@@ -1822,19 +1839,19 @@ footer {
         padding-right: 0;
     }
 
-    .descriptionHeader{
+    .descriptionHeader {
         font-size: 1.2rem;
     }
 
-    p{
+    p {
         font-size: 0.9rem;
     }
 
-    .whyStatementHead{
+    .whyStatementHead {
         font-size: 1.4rem;
     }
 
-    .caseTitle{
+    .caseTitle {
         font-size: 3.8rem;
     }
 
@@ -2107,6 +2124,10 @@ footer {
         padding: 2rem 1.5rem;
     }
 
+    .otherProject{
+        padding: 1rem
+    }
+
     #albertFeatureImg {
         position: absolute;
         left: -2rem;
@@ -2134,6 +2155,25 @@ footer {
 }
 
 @media(width < 32rem) {
+
+    .CTABig p {
+        font-size: 2.1rem;
+    }
+
+    .CTAIndust,
+    .CTABased {
+        font-size: 1rem;
+        position: absolute;
+    }
+
+    .innerLinks{
+        font-size: 0.3rem;
+    }
+
+    .mobileLinks p:nth-child(2) {
+
+    font-size: 2rem;
+}
 
     .homeHeader h1 {
         font-size: 2.5rem;
