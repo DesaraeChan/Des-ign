@@ -196,7 +196,7 @@ figcaption {
 }
 
 .mobileLinks.active {
-    max-height: 400px;
+    max-height: 500px;
 }
 
 .innerLinks {
@@ -223,6 +223,12 @@ figcaption {
 }
 
 .mobileLinks.active .innerLinks:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.35s;
+}
+
+.mobileLinks.active .innerLinks:nth-child(4) {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.35s;
@@ -549,7 +555,7 @@ figcaption {
 }
 
 #albertFeature {
-    background-color: #D5D7D9;
+    background-color: #d9d7d5;
 }
 
 #finalTransmissionFeature {
@@ -582,7 +588,7 @@ figcaption {
     grid-template-columns: 3fr 2fr;
     gap: 2rem;
     padding: 2rem;
-    background-color: #f2f2f2;
+    background-color: #F5F0EA;
     text-decoration: none;
     color: black;
     border-radius: 2rem;
@@ -602,9 +608,10 @@ figcaption {
 }
 
 .titleOther{
-    font-size: 2.2rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 400;
     margin: 0;
+    line-height: 1.05;
 }
 
 #albertFeatureImg {
@@ -658,7 +665,7 @@ figcaption {
 }
 
 #albertKeyword p {
-    background-color: #C7C9CC;
+    background-color: #cccbc7;
 }
 
 .otherKeyword{
@@ -959,6 +966,15 @@ footer {
 
 }
 
+.stonePCaseImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 50% 30%;
+
+}
+
 .caseTitle {
     font-weight: 400;
     font-size: 5rem;
@@ -1009,9 +1025,11 @@ footer {
 }
 
 .caseMeImg {
-    width: 100%;
+    width: 70%;
     max-height: 20rem;
-    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .descriptionSubhead {
@@ -1375,6 +1393,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 .whiteText {
@@ -1451,7 +1471,7 @@ footer {
 .dubanFoamPhotoGrid img,
 .dubanFoamGrid img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 2rem;
 }
@@ -1563,8 +1583,41 @@ footer {
     width: 100%;
     height: auto;
     aspect-ratio: 932 / 638;
-    /* your image's width / height */
     border-radius: 2rem;
+}
+
+/* Conquest */
+.websiteDirect {
+    font-family: "Aeonik", Verdana, sans-serif;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding-left: 0;
+    transition: padding-left 0.2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.websiteDirect:hover,
+.websiteDirect:focus {
+    padding-left: 1.25rem;
+}
+
+.websiteDirect::before {
+    content: "→";
+    position: absolute;
+    left: 0.1rem;
+    top: 50%;
+    font-size: 1.2rem;
+    line-height: 1;
+    transform: translate(-10px, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.websiteDirect:hover::before,
+.websiteDirect:focus::before {
+    transform: translate(0, -50%);
+    opacity: 1;
 }
 
 @media(width < 74rem) {
@@ -1764,9 +1817,8 @@ footer {
     }
 
     .caseMeImg {
-
         height: auto;
-        width: 80%;
+        width: 90%;
     }
 
     .finalHeaderFlex {

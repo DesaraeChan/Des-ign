@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Stone Pond - Desmond Chen
+  link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  script(src='/JavaScript/dropdown.js' defer='')
+  script(src='/JavaScript/fadeIn.js' defer='')
+  link(href='/css/main.css' rel='stylesheet')
+include inc/_navCase
+main
+  section
+    img.stonePCaseImg(alt='Stone Pond Ikebana Bowl' src='/css/img/StonePondImg/StonePMain.png' height='600' weight='1000')
+    .caseContainer
+      div
+        h1.caseTitle Stone Pond
+        h1.caseTitle Ikebana
+        p.projectCaseSubTitle Christmas Gift
+
+      div
+        p.descriptionSubhead Summary
+        h2.descriptionHeader
+          | An ikebana bowl designed to enhance the flowers within while maintaining a distinct presence.
+        hr
+        .descriptionRoles
+          div
+            p.roleTitles Tools
+            p
+              | 3D Printing, Solidworks, Painting
+          div
+            p.roleTitles Duration
+            p 2 weeks, Winter 2025
+          div
+            p.roleTitles Link
+            a.websiteDirect(href = "https://www.instagram.com/p/DTJx3G_EQBV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target='_blank' rel='noopener noreferrer') Check out my post here
+include inc/_footer
