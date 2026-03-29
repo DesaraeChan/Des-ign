@@ -69,25 +69,24 @@ main
           | The hypothesis was that players would improvise their own communication
           | systems on the fly, creating an emergent and personal problem-solving experience. We wanted the
           | constraint to feel meaningful and uniquely challenging.
+        img.finalTKTNOEImage(src='/css/img/FinalTransmissionImg/KTANOEImage.png' alt='Image of game Keep Talking and no one explodes' width='642' height='361')
         p.finalTIdeationBotText
           | The inspiration for this idea came from games such as Keep Talking
           | and No One Explodes. One player with a manual and another with a bomb must coordiate how to
-          | solve the puzzles on the bomb without seeing each others tools
-        img.finalTKTNOEImage(src='/css/img/FinalTransmissionImg/KTANOEImage.png' alt='Image of game Keep Talking and no one explodes' width='642' height='361')
+          | solve the puzzles on the bomb without seeing each others tools.
   section.projectSection
     p System Design
     h3.explanationHeading.shrink
-      | I mapped the device ecosystem from the start, defining the logic that
-      | would link both players&apos; interactions and move both players toward puzzle completion.
+      | I mapped the device ecosystem, defining the logic linking both players&apos; interactions to puzzle completion.
     img.finalTConnectionDiagram(src='/css/img/FinalTransmissionImg/ConnectionMap.svg' alt='Connection Diagram of all the components in the escape room')
-    div
-      p.finalTTextPaddingR.shrink
+    div.finalTGrid
+      p.finalTTextPaddingR
         | One of my primary contributions for this project was establishing the
         | wireless communication protocol
-        | between all the devices, using an OOCSI (A middleware prototyping wireless communication
-        | architecture) protocol. It was my first time connecting multiple Arduino modules together to create
-        | a fully connected ioT system.
-      p.finalTTextPaddingR.shrink
+        | between all the devices, using OOCSI (a middleware prototyping wireless communication
+        | architecture). It was my first time connecting multiple Arduino modules together to create
+        | a fully connected IoT system.
+      p.finalTTextPaddingR
         | I also owned the full design of the RFID sensor module, which was one of
         | the 3 main modules used
         | needed to complete the puzzles. The ESP32 module was connected to a RFID sensor and an assortment of
@@ -96,9 +95,7 @@ main
   section.projectSection
     p Fabrication and Art Direction
     h3.explanationHeading.shrink
-      | To create the most immersive player experience, the fabrication and
-      | finishing of each module required a clear art direction to reinforce the theme of a worn submarine
-      | interface.
+      | A consistent art direction shaped fabrication and finishing to support the submarine theme.
     .finalTFabricationGrid
       div
         img.finalTImageFabrication(src='/css/img/FinalTransmissionImg/RFIDDevice.png' alt='Image of the RFID device up close')
@@ -115,7 +112,7 @@ main
     p Play Testing
     h3.explanationHeading.shrink
       | We ran play testing sessions with three groups of people who had no
-      | prior knowledge of the puzzles. This was the most revealing phase of the project.
+      | prior knowledge of the puzzles.
     img.finalTImageFabrication(src='/css/img/FinalTransmissionImg/playTesting.png' alt='play testers going through the escape room')
     .finalTFabricationGrid
       div
@@ -132,7 +129,7 @@ main
           | 80&rsquo;s home HiFi systems and car digital dashboards, which helped make a more immersive theme.
   section.darkGrayBG.projectSection
     p.finalSubHeading.whiteText Final Escape Room
-    h3.explanationHeading.whiteText.shrink
+    h3.explanationHeading.whiteText
       | In the final iteration, we allowed players to converse and collaborate while still keeping their puzzles
       | hidden from each other. Completion rates improved, and the experience felt appropriately challenging and
       | fun rather than frustrating.

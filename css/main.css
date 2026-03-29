@@ -117,6 +117,7 @@ h2 {
 
 h3 {
     font-family: "Aeonik", Verdana, sans-serif;
+    font-weight: 500;
     padding-top: 0;
     margin-top: 0;
 }
@@ -577,9 +578,11 @@ figcaption {
 }
 
 .otherProject {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
     padding: 2rem;
     background-color: #f2f2f2;
-    display: block;
     text-decoration: none;
     color: black;
     border-radius: 2rem;
@@ -598,6 +601,12 @@ figcaption {
     margin: 0;
 }
 
+.titleOther{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 #albertFeatureImg {
     position: absolute;
     left: -2rem;
@@ -611,7 +620,7 @@ figcaption {
     border-radius: 1.5rem;
     inset: 0;
     width: 100%;
-    max-height: 20rem;
+    max-height: 100%;
     object-fit: cover;
     
 }
@@ -652,9 +661,18 @@ figcaption {
     background-color: #C7C9CC;
 }
 
-.otherKeyword p {
-    background-color: #cfcfcf;
+.otherKeyword{
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+    color: #474747;
 }
+
+.otherKeyword p {
+    width: fit-content;
+    font-size: 1rem;
+}
+
 
 #finalTransKeyword p {
     background-color: #464545;
@@ -665,6 +683,10 @@ figcaption {
     font-size: 1.75rem;
     max-width: 30rem;
     z-index: 2;
+}
+
+.otherText {
+    font-size: 1rem;
 }
 
 .featureProject img:not(.standardFeatureImg) {
@@ -682,6 +704,7 @@ figcaption {
 }
 
 hr {
+
     stroke-width: 1px;
 }
 
@@ -689,13 +712,14 @@ footer {
     background-color: black;
     color: white;
     padding-bottom: 5rem;
+    padding-top: 5rem;
     text-decoration: none;
 }
 
 .footerContact {
     font-family: "Aeonik", Verdana, sans-serif;
     display: block;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -793,6 +817,7 @@ footer {
 .footerFlex p {
     margin: 0;
     padding: 0;
+    font-size: 0.75rem;
 }
 
 /* about Section */
@@ -949,7 +974,8 @@ footer {
 .projectSection {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-bottom: 7rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
 
     opacity: 1;
     transform: translateY(0);
@@ -1027,24 +1053,24 @@ footer {
     font-weight: 700;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0.25rem;
 
 }
 
 .albertResearch {
-    margin-top: 4rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
     max-width: 50%;
 }
 
 .explanationHeading {
     font-family: "Aeonik", Verdana, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 0.75rem;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
 
 }
 
@@ -1326,7 +1352,7 @@ footer {
 
 .finalSubHeading {
     color: white;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .finalAlbertGrid {
@@ -1508,7 +1534,9 @@ footer {
 }
 
 .finalTIdeationBotText {
-    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
 }
 
 .finalTTextPaddingR {
@@ -1580,7 +1608,8 @@ footer {
     .projectSection {
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
     }
 
     .homeSection,
@@ -2087,7 +2116,13 @@ footer {
         padding-top: 0rem;
         margin: 0;
     }
-
+    .otherProject{
+        display: flex;
+        flex-direction: column;
+    }
+    .standardFeatureImg{
+        max-height: 20rem;
+    }
 }
 
 @media(width<40rem) {
@@ -2104,6 +2139,10 @@ footer {
     .titleFeature {
         font-size: 2rem;
         margin-bottom: 0.5rem;
+    }
+
+    .otherFeature{
+        font-size: 2rem;
     }
 
     .featureText {
@@ -2125,7 +2164,7 @@ footer {
     }
 
     .otherProject{
-        padding: 1rem
+        padding: 1.5rem
     }
 
     #albertFeatureImg {
