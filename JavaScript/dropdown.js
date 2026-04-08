@@ -43,3 +43,13 @@ window.addEventListener("resize", () => {
         sandToggle.setAttribute('aria-expanded', false);
     }
 });
+
+const btn = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+    btn.classList.toggle("visible", window.scrollY > 400);
+});
+
+btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
