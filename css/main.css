@@ -950,6 +950,7 @@ footer {
 .caseContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:3rem;
     margin: 2rem 8rem;
     padding: 3rem 3rem;
     background-color: #F5F0EA;

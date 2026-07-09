@@ -2,7 +2,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  title Stone Pond - Desmond Chen
+  title RhymesWithWow - Desmond Chen
   link(rel='icon' type='image/x-icon' href='/css/img/icons/MainIcon.ico')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
@@ -12,27 +12,33 @@ head
 include inc/_navCase
 main
   section
-    img.stonePCaseImg(alt='Stone Pond Ikebana Bowl' src='/css/img/StonePondImg/StonePMain.png' height='600' width='1000')
+    a(href = "https://rhymeswithwow.ca/" target='_blank' rel='noopener noreferrer')
+        img.caseImg(alt='RhymesWithWow Frontpage' src='/css/img/RhymesImg/RhymesMain.png' height='600' width='1000')
     .caseContainer
       div
-        h1.caseTitle Stone Pond
-        h1.caseTitle Ikebana
-        p.projectCaseSubTitle Christmas Gift
-
+        h1.caseTitle Rhymes With
+        h1.caseTitle "Wow" Website
+        p.projectCaseSubTitle Contract Work
+        
       div
         p.descriptionSubhead Summary
         h2.descriptionHeader
-          | An ikebana bowl designed to enhance the flowers within while maintaining a distinct presence.
+          | A brutalist website design made to show case an author's works
         hr
         .descriptionRoles
           div
+            p.roleTitles Role
+            p Visual Design, Web Implimentation
+          div
             p.roleTitles Tools
             p
-              | 3D Printing, Solidworks, Painting
+              | HTML,
+              | CSS, 
+              | Figma
           div
             p.roleTitles Duration
-            p 2 weeks, Winter 2025
+            p 4 weeks, Summer 2025
           div
             p.roleTitles Link
-            a.websiteDirect(href = "https://www.instagram.com/p/DTJx3G_EQBV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target='_blank' rel='noopener noreferrer') Check out my post here
+            a.websiteDirect(href = "https://rhymeswithwow.ca/" target='_blank' rel='noopener noreferrer') Check it out here
 include inc/_footer
